@@ -4,7 +4,7 @@ import {MyDesigns} from './MyDesigns';
 
 export const Projects = ()=>{
 	const projectTypes = ["Applications", "UI/UX Designs"];
-	const [projectType, setProjectType] = useState('');
+	const [projectType, setProjectType] = useState('Applications');
 
 	return (
 		<div className="projectsCont">
@@ -21,8 +21,8 @@ export const Projects = ()=>{
 			</div>
 
 			<div className="projects">
-			{projectType === '' && projectType === "Applications" && (<MyApplications />)}
-			{projectType === "UI/UX Designs" && (<MyDesigns />)}			
+				{projectType === "Applications" && (<MyApplications />)}
+				{projectType === "UI/UX Designs" && (<MyDesigns />)}			
 			</div>
 
 		
