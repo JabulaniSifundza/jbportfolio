@@ -3,17 +3,13 @@ import './App.css';
 import {Canvas} from '@react-three/fiber';
 import {useGLTF, PerspectiveCamera, OrbitControls, Loader, Html, useAnimations} from '@react-three/drei';
 
-
-export function DaOu(props) {
+export function TheOu(props) {
 	const group = useRef()
-	const { nodes, materials, animations } = useGLTF('/typing.glb')
+	const { nodes, materials, animations } = useGLTF('/DaOuTyping.glb')
 	const { actions } = useAnimations(animations, group)
-	console.log(actions)
-
 	useEffect(()=>{
 		actions['Armature|mixamo.com|Layer0'].play();
 	})
-	
 	return (
 	  <group ref={group} {...props} dispose={null}>
 		<group name="Scene" position={[10, -50, 8]} scale={100}>
@@ -106,23 +102,19 @@ export function Envelope(props) {
 
 function App() {
   return (
-
 	<div>
-	<Canvas>
-		<Suspense fallback={null}>
-			<ambientLight intensity={0.1} />
-			<pointLight position={[10, 10, 50]}  />
-			<DaOu />
-			<PortfolioBag />
-			<PerspectiveCamera makeDefault aspect={1200 / 600} position={[50, 150, 80]} fov={100}/>
-			<OrbitControls />
-		</Suspense>
-	</Canvas>
-	<Loader />
+		<Canvas>
+			<Suspense fallback={null}>
+				<ambientLight intensity={0.1} />
+				<pointLight position={[10, 10, 50]}  />
+				<TheOu />
+				<PortfolioBag />
+				<PerspectiveCamera makeDefault aspect={1200 / 600} position={[50, 150, 80]} fov={100}/>
+				<OrbitControls />
+			</Suspense>
+		</Canvas>
+		<Loader />
 	</div>
-	
-	
-   
   );
 }
 
