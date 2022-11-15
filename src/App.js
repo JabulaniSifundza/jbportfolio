@@ -1,7 +1,12 @@
 import React, {Suspense, useRef, useEffect} from 'react';
+import * as THREE from 'three';
 import './App.css';
-import {Canvas} from '@react-three/fiber';
-import {useGLTF, PerspectiveCamera, OrbitControls, Loader, Html, useAnimations} from '@react-three/drei';
+import {Canvas, useFrame} from '@react-three/fiber';
+import {useGLTF, PerspectiveCamera, Loader, useAnimations, OrbitControls, Html} from '@react-three/drei';
+
+import Header from './components/Header';
+import Introduction from './components/Introduction';
+import AboutMe from './components/AboutMe';
 
 export function TheOu(props) {
 	const group = useRef()
@@ -12,7 +17,7 @@ export function TheOu(props) {
 	})
 	return (
 	  <group ref={group} {...props} dispose={null}>
-		<group name="Scene" position={[10, -50, 8]} scale={100}>
+		<group name="Scene" position={[10, 120, 8]} scale={110}>
 		  <group name="Armature">
 			<primitive object={nodes.Hips} />
 			<skinnedMesh name="Wolf3D_Body" geometry={nodes.Wolf3D_Body.geometry} material={materials.Wolf3D_Body} skeleton={nodes.Wolf3D_Body.skeleton} />
@@ -72,14 +77,28 @@ export function PortfolioBag(props) {
   }
 
 export function Lanyard(props) {
+	const group = useRef()
 	const { nodes, materials } = useGLTF('/lanyard.glb')
+	useFrame((state) => {
+		const t = state.clock.getElapsedTime()
+		group.current.rotation.x = THREE.MathUtils.lerp(group.current.rotation.x, Math.cos(t / 2) / 20 + 0.25, 0.1)
+		group.current.rotation.y = THREE.MathUtils.lerp(group.current.rotation.y, Math.sin(t / 4) / 20, 0.1)
+		group.current.rotation.z = THREE.MathUtils.lerp(group.current.rotation.z, Math.sin(t / 8) / 20, 0.1)
+		group.current.position.y = THREE.MathUtils.lerp(group.current.position.y, (-2 + Math.sin(t / 2)) / 2, 0.1)
+	  })
 	return (
-	  <group {...props} dispose={null}>
-		<group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
+	  <group {...props} dispose={null} ref={group}>
+		<group rotation={[Math.PI / 2, 0, 0]} scale={10} position={[5, 80, 20]} >
 		  <mesh geometry={nodes['cover-vertical'].geometry} material={materials['trnasparente.001']} />
 		  <mesh geometry={nodes.headband.geometry} material={materials['FABRIC 1_FRONTU3.001']} />
 		  <mesh geometry={nodes.Hook.geometry} material={materials['Hook.002']} position={[0, -4.12, 0]} rotation={[-Math.PI / 2, 0, -Math.PI / 2]} />
-		  <mesh geometry={nodes.paper.geometry} material={materials['Card.002']} />
+		  <mesh geometry={nodes.paper.geometry} material={materials['Card.002']} >
+			<Html className="content" rotation-x={-Math.PI / 68} position={[0, 0.05, -0.09]} transform occlude>
+				<div className="wrapper">
+					<p>Da Ou is here</p>
+				</div>
+			</Html> 
+			</mesh>
 		  <mesh geometry={nodes.support.geometry} material={materials['Hook.002']} />
 		</group>
 	  </group>
@@ -103,17 +122,33 @@ export function Envelope(props) {
 function App() {
   return (
 	<div>
-		<Canvas>
+	   <Header />
+	   <div className="introduction">
+	   <Introduction />
+	   <Canvas>
 			<Suspense fallback={null}>
-				<ambientLight intensity={0.1} />
-				<pointLight position={[10, 10, 50]}  />
+				<ambientLight intensity={0.4} />
+				<pointLight position={[20, 50, 10]}  />
 				<TheOu />
-				<PortfolioBag />
-				<PerspectiveCamera makeDefault aspect={1200 / 600} position={[50, 150, 80]} fov={100}/>
+				<PerspectiveCamera makeDefault aspect={1200 / 600} position={[20, 200, 180]} fov={80}/>
+			</Suspense>
+		</Canvas>
+		
+	   </div>
+
+	   <div className="info">
+			<Canvas className="lanyard">
+				<Suspense fallback={null}>
+				<ambientLight intensity={0.4} />
+				<pointLight position={[20, 50, 10]}  />
+				<Lanyard />
+				<PerspectiveCamera makeDefault aspect={1200 / 600} position={[15, 200, 90]} fov={80}/>
 				<OrbitControls />
 			</Suspense>
 		</Canvas>
-		<Loader />
+		<AboutMe />
+	   </div>
+	   <Loader />
 	</div>
   );
 }

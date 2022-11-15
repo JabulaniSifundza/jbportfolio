@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export const AboutMe = ()=>{
+const AboutMe = ()=>{
 	return (
 		<div className="infoCard">
 			<h2>
@@ -19,3 +19,5 @@ export const AboutMe = ()=>{
 
 	)
 }
+
+export default AboutMe;

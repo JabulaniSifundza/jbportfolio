@@ -2,10 +2,10 @@ import {useState, useEffect} from 'react';
 
 
 
-export const Introduction = () =>{
+const Introduction = () =>{
 	const [loopNum, setLoopNum] = useState(0);
 	const [isDeleting, setIsDeleting] = useState(false);
-	const toRotate = ["Front-End Developer", "Full-Stack Developer", "UI/UX Designer", "Creator"];
+	const toRotate = ["Front-End Developer.", "Full-Stack Developer.", "UI/UX Designer.", "Creator."];
 	const [text, setText] = useState('');
 	const [delta, setDelta] = useState(300 - Math.random() * 100)
 	const period = 2000;
@@ -44,10 +44,12 @@ export const Introduction = () =>{
 	return (
 		<div className="intro">
 			<section className="info">
-				<p className="welcome">Wlecome to My World</p>
-				<h3 className="myName">My name is Jabulani</h3>
+				<h3 className="myName">Hi there, my name is Jabulani.</h3>
+				<br />
 				<h2 className="occupation">{`I'm a `}<span className="typing">{text}</span></h2>
 			</section>
 		</div>
 	)
 }
+
+export default Introduction;
