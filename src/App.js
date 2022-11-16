@@ -41,7 +41,7 @@ export function Keyboard(props) {
 	const { nodes, materials } = useGLTF('/keyboard.glb')
 	return (
 	  <group {...props} dispose={null}>
-		<group rotation={[Math.PI / 2, 0, Math.PI / 2]} scale={0.01}>
+		<group rotation={[Math.PI / 2, 0, Math.PI / 2]} position={[10, 120, 8]} scale={2}>
 		  <mesh geometry={nodes.keyboard.geometry} material={materials.wireframe} />
 		  <mesh geometry={nodes.keys.geometry} material={materials.wireframe} />
 		</group>
@@ -53,7 +53,7 @@ export function Monitor(props) {
 	const { nodes, materials } = useGLTF('/monitor.glb')
 	return (
 	  <group {...props} dispose={null}>
-		<group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
+		<group rotation={[Math.PI / 2, 0, 0]} position={[10, 120, 8]} scale={2}>
 		  <mesh geometry={nodes['monitor-screen'].geometry} material={materials.Default} />
 		  <mesh geometry={nodes['monitor-stand'].geometry} material={materials.Default} />
 		</group>
@@ -145,9 +145,19 @@ function App() {
 				<PerspectiveCamera makeDefault aspect={1200 / 600} position={[15, 200, 90]} fov={80}/>
 				<OrbitControls />
 			</Suspense>
-		</Canvas>
-		<AboutMe />
+			</Canvas>
+			<AboutMe />
 	   </div>
+
+	   <Canvas className="keyboard">
+		<Suspense fallback={null}>
+		<ambientLight intensity={0.4} />
+		<pointLight position={[20, 50, 10]}  />
+		<Monitor />
+		<PerspectiveCamera makeDefault aspect={1200 / 600} position={[15, 200, 90]} fov={80}/>
+		<OrbitControls />
+		</Suspense>
+	   </Canvas>
 	   <Loader />
 	</div>
   );
