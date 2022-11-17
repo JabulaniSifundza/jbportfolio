@@ -8,6 +8,34 @@ import Header from './components/Header';
 import Introduction from './components/Introduction';
 import AboutMe from './components/AboutMe';
 
+export function Skills(props) {
+	const group = useRef()
+	const { nodes, materials, animations } = useGLTF('/mySkills.glb')
+	const { actions } = useAnimations(animations, group)
+	useEffect(()=>{
+		actions['Armature|mixamo.com|Layer0'].play();
+	},[actions])
+	return (
+	  <group ref={group} {...props} dispose={null}>
+		<group name="Scene" position={[10, 29, 8]} scale={105}>
+		  <group name="Armature">
+			<primitive object={nodes.Hips} />
+			<skinnedMesh name="Wolf3D_Body" geometry={nodes.Wolf3D_Body.geometry} material={materials.Wolf3D_Body} skeleton={nodes.Wolf3D_Body.skeleton} />
+			<skinnedMesh name="Wolf3D_Hair" geometry={nodes.Wolf3D_Hair.geometry} material={materials.Wolf3D_Hair} skeleton={nodes.Wolf3D_Hair.skeleton} />
+			<skinnedMesh name="Wolf3D_Outfit_Bottom" geometry={nodes.Wolf3D_Outfit_Bottom.geometry} material={materials.Wolf3D_Outfit_Bottom} skeleton={nodes.Wolf3D_Outfit_Bottom.skeleton} />
+			<skinnedMesh name="Wolf3D_Outfit_Footwear" geometry={nodes.Wolf3D_Outfit_Footwear.geometry} material={materials.Wolf3D_Outfit_Footwear} skeleton={nodes.Wolf3D_Outfit_Footwear.skeleton} />
+			<skinnedMesh name="Wolf3D_Outfit_Top" geometry={nodes.Wolf3D_Outfit_Top.geometry} material={materials.Wolf3D_Outfit_Top} skeleton={nodes.Wolf3D_Outfit_Top.skeleton} />
+			<skinnedMesh name="EyeLeft" geometry={nodes.EyeLeft.geometry} material={materials.Wolf3D_Eye} skeleton={nodes.EyeLeft.skeleton} morphTargetDictionary={nodes.EyeLeft.morphTargetDictionary} morphTargetInfluences={nodes.EyeLeft.morphTargetInfluences} />
+			<skinnedMesh name="EyeRight" geometry={nodes.EyeRight.geometry} material={materials.Wolf3D_Eye} skeleton={nodes.EyeRight.skeleton} morphTargetDictionary={nodes.EyeRight.morphTargetDictionary} morphTargetInfluences={nodes.EyeRight.morphTargetInfluences} />
+			<skinnedMesh name="Wolf3D_Beard" geometry={nodes.Wolf3D_Beard.geometry} material={materials.Wolf3D_Beard} skeleton={nodes.Wolf3D_Beard.skeleton} morphTargetDictionary={nodes.Wolf3D_Beard.morphTargetDictionary} morphTargetInfluences={nodes.Wolf3D_Beard.morphTargetInfluences} />
+			<skinnedMesh name="Wolf3D_Head" geometry={nodes.Wolf3D_Head.geometry} material={materials['Material.001']} skeleton={nodes.Wolf3D_Head.skeleton} morphTargetDictionary={nodes.Wolf3D_Head.morphTargetDictionary} morphTargetInfluences={nodes.Wolf3D_Head.morphTargetInfluences} />
+			<skinnedMesh name="Wolf3D_Teeth" geometry={nodes.Wolf3D_Teeth.geometry} material={materials.Wolf3D_Teeth} skeleton={nodes.Wolf3D_Teeth.skeleton} morphTargetDictionary={nodes.Wolf3D_Teeth.morphTargetDictionary} morphTargetInfluences={nodes.Wolf3D_Teeth.morphTargetInfluences} />
+		  </group>
+		</group>
+	  </group>
+	)
+  }
+
 export function TheOu(props) {
 	const group = useRef()
 	const { nodes, materials, animations } = useGLTF('/DaOuTyping.glb')
@@ -37,36 +65,13 @@ export function TheOu(props) {
 }
 
 
-export function Keyboard(props) {
-	const { nodes, materials } = useGLTF('/keyboard.glb')
-	return (
-	  <group {...props} dispose={null}>
-		<group rotation={[Math.PI / 2, 0, Math.PI / 2]} position={[10, 120, 8]} scale={2}>
-		  <mesh geometry={nodes.keyboard.geometry} material={materials.wireframe} />
-		  <mesh geometry={nodes.keys.geometry} material={materials.wireframe} />
-		</group>
-	  </group>
-	)
-}
-
-export function Monitor(props) {
-	const { nodes, materials } = useGLTF('/monitor.glb')
-	return (
-	  <group {...props} dispose={null}>
-		<group rotation={[Math.PI / 2, 0, 0]} position={[10, 120, 8]} scale={2}>
-		  <mesh geometry={nodes['monitor-screen'].geometry} material={materials.Default} />
-		  <mesh geometry={nodes['monitor-stand'].geometry} material={materials.Default} />
-		</group>
-	  </group>
-	)
-}
 
 
 export function PortfolioBag(props) {
 	const { nodes, materials } = useGLTF('/portfolioBrownLeather.glb')
 	return (
 	  <group {...props} dispose={null}>
-		<group position={[10, -60, 5]} rotation={[Math.PI / 2, 0, 0]} scale={2.1}>
+		<group position={[5, -60, 5]} rotation={[Math.PI / 2, 0, 0]} scale={2.1}>
 		  <mesh geometry={nodes['body-close'].geometry} material={materials.Default} />
 		  <mesh geometry={nodes.brooch_2.geometry} material={materials.Default} />
 		  <mesh geometry={nodes['brooch-base'].geometry} material={materials.Default} />
@@ -81,10 +86,10 @@ export function Lanyard(props) {
 	const { nodes, materials } = useGLTF('/lanyard.glb')
 	useFrame((state) => {
 		const t = state.clock.getElapsedTime()
-		group.current.rotation.x = THREE.MathUtils.lerp(group.current.rotation.x, Math.cos(t / 2) / 20 + 0.25, 0.1)
-		group.current.rotation.y = THREE.MathUtils.lerp(group.current.rotation.y, Math.sin(t / 4) / 20, 0.1)
-		group.current.rotation.z = THREE.MathUtils.lerp(group.current.rotation.z, Math.sin(t / 8) / 20, 0.1)
-		group.current.position.y = THREE.MathUtils.lerp(group.current.position.y, (-2 + Math.sin(t / 2)) / 2, 0.1)
+		group.current.rotation.x = THREE.MathUtils.lerp(group.current.rotation.x, Math.cos(t / 2) / 20 + 0.25, 0.2)
+		group.current.rotation.y = THREE.MathUtils.lerp(group.current.rotation.y, Math.sin(t / 4) / 20, 0.2)
+		group.current.rotation.z = THREE.MathUtils.lerp(group.current.rotation.z, Math.sin(t / 8) / 20, 0.2)
+		group.current.position.y = THREE.MathUtils.lerp(group.current.position.y, (-2 + Math.sin(t / 2)) / 2, 0.2)
 	  })
 	return (
 	  <group {...props} dispose={null} ref={group}>
@@ -149,14 +154,37 @@ function App() {
 			<AboutMe />
 	   </div>
 
-	   <Canvas className="keyboard">
-		<Suspense fallback={null}>
-		<ambientLight intensity={0.4} />
-		<pointLight position={[20, 50, 10]}  />
-		<Monitor />
-		<PerspectiveCamera makeDefault aspect={1200 / 600} position={[15, 200, 90]} fov={80}/>
-		<OrbitControls />
-		</Suspense>
+
+	   <div className="skills">
+			<Canvas>
+			<Suspense fallback={null}>
+			<ambientLight intensity={0.4} />
+			<pointLight position={[10, 40, 80]}  />
+			<Skills />
+			<PerspectiveCamera makeDefault aspect={1200 / 600} position={[5, 160, 200]} fov={80}/>
+			</Suspense>
+			</Canvas>
+	   </div>
+
+	   <div className="projects">
+	   		<Canvas>
+				<Suspense fallback={null}>
+					<ambientLight intensity={0.5} />
+					<pointLight position={[10, 0, 180]}  />
+						<PortfolioBag />
+					<PerspectiveCamera makeDefault aspect={1200 / 600} position={[5, -5, 100]} fov={80}/>
+				</Suspense>
+			</Canvas>
+	   </div>
+
+	   <Canvas className="contact">
+			<Suspense fallback={null}>
+				<ambientLight intensity={0.5} />
+				<pointLight position={[10, 0, 180]}  />
+					<Envelope />
+				<PerspectiveCamera makeDefault aspect={1200 / 600} position={[5, -5, 100]} fov={80}/>
+				<OrbitControls />
+			</Suspense>
 	   </Canvas>
 	   <Loader />
 	</div>

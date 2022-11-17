@@ -7,6 +7,10 @@
 	--light-color:#d8d8d1;
 }
 
+Loader{
+	height: 100vh;
+}
+
 header{
 	width: 100%;
 	height: 100px;
@@ -99,6 +103,22 @@ transform-origin: top left;
 	margin-right: auto;
 }
 
+.skills{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.projects{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.contact{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 footer{
 
 }
@@ -177,9 +197,6 @@ section{
 
 }
 
-.contact{
-
-}
 
 .infoCard{
 
