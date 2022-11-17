@@ -110,18 +110,15 @@ export function Lanyard(props) {
 	)
 }
 
-export function Envelope(props) {
-  const { nodes, materials } = useGLTF('/message.glb')
-  return (
-    <group {...props} dispose={null}>
-      <group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
-        <mesh geometry={nodes['envelope-001-a'].geometry} material={materials['Default.003']} />
-        <mesh geometry={nodes['gift-card-001-a001'].geometry} material={materials['card.001']} />
-        <mesh geometry={nodes.sticker.geometry} material={materials['sticker.001']} />
-      </group>
-    </group>
-  )
-}
+export function Contact(props) {
+	const { nodes, materials } = useGLTF('/contact.glb')
+	return (
+	  <group {...props} dispose={null}>
+		<mesh geometry={nodes.message002.geometry} material={materials.Material} position={[-280, 80, -200]} scale={[-10, 10, 10]} />
+		<mesh geometry={nodes.message.geometry} material={materials['Material #26']} scale={10} />
+	  </group>
+	)
+  }
 
 
 function App() {
@@ -181,7 +178,7 @@ function App() {
 			<Suspense fallback={null}>
 				<ambientLight intensity={0.5} />
 				<pointLight position={[10, 0, 180]}  />
-					<Envelope />
+					<Contact />
 				<PerspectiveCamera makeDefault aspect={1200 / 600} position={[5, -5, 100]} fov={80}/>
 				<OrbitControls />
 			</Suspense>
