@@ -32,7 +32,7 @@ const MySkills = ()=>{
 			experinece: "1.5 years"
 		},
 		{
-			skillName: "Adobe Experience Design",
+			skillName: "Adobe XD",
 			skillIcon: xd,
 			experinece: "2.5 years"
 		},
@@ -63,6 +63,9 @@ const MySkills = ()=>{
 
    return (
 	<div className="skillsCard">
+		<h2>
+			My Skills
+		</h2>
 		<div className="skillsHolder">
 		{
 			skills.map((skill)=>{
@@ -70,7 +73,10 @@ const MySkills = ()=>{
 					<div key={skill.skillName}>
 						<img src={skill.skillIcon} alt={skill.skillName} className="skillIcon"/>
 						<h4>{skill.skillName}</h4>
-						<p>Experience <span>{skill.experinece}</span></p>
+						<p>Experience:
+						<br />
+						<span>{skill.experinece}</span></p>
+						<svg></svg>
 					</div>
 				)
 			})

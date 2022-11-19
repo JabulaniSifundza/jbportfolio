@@ -125,7 +125,7 @@ export function Lanyard(props) {
 	  })
 	return (
 	  <group {...props} dispose={null} ref={group}>
-		<group rotation={[Math.PI / 2, 0, 0]} scale={10} position={[5, 80, 20]} >
+		<group rotation={[Math.PI / 2, 0, 0]} scale={10} position={[5, 100, 20]} >
 		  <mesh geometry={nodes['cover-vertical'].geometry} material={materials['trnasparente.001']} />
 		  <mesh geometry={nodes.headband.geometry} material={materials['FABRIC 1_FRONTU3.001']} />
 		  <mesh geometry={nodes.Hook.geometry} material={materials['Hook.002']} position={[0, -4.12, 0]} rotation={[-Math.PI / 2, 0, -Math.PI / 2]} />
