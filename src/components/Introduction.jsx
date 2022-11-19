@@ -5,10 +5,10 @@ import {useState, useEffect} from 'react';
 const Introduction = () =>{
 	const [loopNum, setLoopNum] = useState(0);
 	const [isDeleting, setIsDeleting] = useState(false);
-	const toRotate = [ "Full-Stack Developer.", "Front-End Developer.", "Creator."];
+	const toRotate = [ "Full-Stack Developer.", "Software Developer.", "Creator."];
 	const [text, setText] = useState('');
 	const [delta, setDelta] = useState(300 - Math.random() * 100)
-	const period = 2000;
+	const period = 1600;
 
 	const tick = () =>{
 		let i = loopNum % toRotate.length;

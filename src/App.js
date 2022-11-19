@@ -7,6 +7,8 @@ import {useGLTF, PerspectiveCamera, Loader, useAnimations, OrbitControls, Html} 
 import Header from './components/Header';
 import Introduction from './components/Introduction';
 import AboutMe from './components/AboutMe';
+import LanyardDetails from './components/LanyardDetails';
+import MySkills from './components/MySkills';
 
 
 export function TextMe(props) {
@@ -128,10 +130,9 @@ export function Lanyard(props) {
 		  <mesh geometry={nodes.headband.geometry} material={materials['FABRIC 1_FRONTU3.001']} />
 		  <mesh geometry={nodes.Hook.geometry} material={materials['Hook.002']} position={[0, -4.12, 0]} rotation={[-Math.PI / 2, 0, -Math.PI / 2]} />
 		  <mesh geometry={nodes.paper.geometry} material={materials['Card.002']} >
-			<Html className="content" rotation-x={Math.PI / 1} rotation-z={Math.PI / 240} position={[0, 0.05, -0.09]} transform occlude>
+			<Html className="content" rotation-x={Math.PI / 1} rotation-z={Math.PI / 280} position={[0, 0.05, -0.09]} transform occlude>
 				<div className="wrapper">
-					<img src="linkedIn.png" alt="" className="lanImage"/>
-					<p>Da Ou is here</p>
+					<LanyardDetails />
 				</div>
 			</Html> 
 			</mesh>
@@ -184,13 +185,14 @@ function App() {
 
 
 	   <div className="skills">
+			<MySkills />
 			<Canvas>
-			<Suspense fallback={null}>
-			<ambientLight intensity={0.4} />
-			<pointLight position={[10, 40, 90]}  />
-			<Skills />
-			<PerspectiveCamera makeDefault aspect={1200 / 600} position={[5, 160, 200]} fov={80}/>
-			</Suspense>
+				<Suspense fallback={null}>
+				<ambientLight intensity={0.4} />
+				<pointLight position={[10, 40, 90]}  />
+				<Skills />
+				<PerspectiveCamera makeDefault aspect={1200 / 600} position={[5, 160, 200]} fov={80}/>
+				</Suspense>
 			</Canvas>
 	   </div>
 

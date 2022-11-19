@@ -91,12 +91,14 @@ Canvas{
 
 .content {
 	width: 200px;
-	height: 216px;
-	background: #f0f0f0;
+	height: 300px;
+	background: #edeaea;
 	border-radius: 3px;
-	overflow-y: auto;
+	overflow-y: hidden;
 	padding: 0;
 	overflow-x: hidden;
+	margin-top: 20px;
+	border-radius: 12px;
 }
   
 .wrapper {
@@ -138,7 +140,48 @@ img{
 
 .lanImage{
 	margin-left: auto;
-	margin-left: auto;
+	margin-right: auto;
+}
+
+.lanyardLinks{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 70%;
+	margin-left: 25px;
+}
+
+.platformIcon{
+	cursor: pointer;
+}
+
+.lanyardMe{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin-left: 38px;
+	
+}
+
+.lanyardText{
+	font-size: 14px;
+}
+
+.skillsCard{
+	display: flex;
+	border-radius: 12px;
+	border: 2px solid var(--secondary-color);
+
+}
+
+.skillsHolder{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-left: 20px;	
+}
+
+.skillIcon{
+	width: 82px;
+	height: 82px;
 }
 
 
