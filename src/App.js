@@ -18,7 +18,7 @@ export function TextMe(props) {
 	},[actions])
 	return (
 	  <group ref={group} {...props} dispose={null}>
-		<group name="Scene" position={[60, -80, 8]} scale={80}>
+		<group name="Scene" position={[-80, -80, 8]} scale={80}>
 		  <group name="Armature">
 			<primitive object={nodes.Hips} />
 			<skinnedMesh name="Wolf3D_Body" geometry={nodes.Wolf3D_Body.geometry} material={materials.Wolf3D_Body} skeleton={nodes.Wolf3D_Body.skeleton} />
@@ -128,8 +128,9 @@ export function Lanyard(props) {
 		  <mesh geometry={nodes.headband.geometry} material={materials['FABRIC 1_FRONTU3.001']} />
 		  <mesh geometry={nodes.Hook.geometry} material={materials['Hook.002']} position={[0, -4.12, 0]} rotation={[-Math.PI / 2, 0, -Math.PI / 2]} />
 		  <mesh geometry={nodes.paper.geometry} material={materials['Card.002']} >
-			<Html className="content" rotation-x={-Math.PI / 68} position={[0, 0.05, -0.09]} transform occlude>
+			<Html className="content" rotation-x={Math.PI / 1} rotation-z={Math.PI / 240} position={[0, 0.05, -0.09]} transform occlude>
 				<div className="wrapper">
+					<img src="linkedIn.png" alt="" className="lanImage"/>
 					<p>Da Ou is here</p>
 				</div>
 			</Html> 
@@ -160,7 +161,7 @@ function App() {
 	   <Canvas>
 			<Suspense fallback={null}>
 				<ambientLight intensity={0.4} />
-				<pointLight position={[20, 50, 10]}  />
+				<pointLight position={[20, 50, 80]}  />
 				<TheOu />
 				<PerspectiveCamera makeDefault aspect={1200 / 600} position={[20, 200, 180]} fov={80}/>
 			</Suspense>
@@ -186,7 +187,7 @@ function App() {
 			<Canvas>
 			<Suspense fallback={null}>
 			<ambientLight intensity={0.4} />
-			<pointLight position={[10, 40, 80]}  />
+			<pointLight position={[10, 40, 90]}  />
 			<Skills />
 			<PerspectiveCamera makeDefault aspect={1200 / 600} position={[5, 160, 200]} fov={80}/>
 			</Suspense>
@@ -209,8 +210,7 @@ function App() {
 				<ambientLight intensity={0.5} />
 				<pointLight position={[10, 0, 180]}  />
 					<TextMe />
-				<PerspectiveCamera makeDefault aspect={1200 / 600} position={[120, 0, 150]} fov={70}/>
-				
+				<PerspectiveCamera makeDefault aspect={1200 / 600} position={[-60, 0, 150]} fov={70}/>
 			</Suspense>
 	   </Canvas>
 	   <Loader />

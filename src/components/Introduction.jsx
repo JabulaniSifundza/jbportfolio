@@ -5,7 +5,7 @@ import {useState, useEffect} from 'react';
 const Introduction = () =>{
 	const [loopNum, setLoopNum] = useState(0);
 	const [isDeleting, setIsDeleting] = useState(false);
-	const toRotate = ["Front-End Developer.", "Full-Stack Developer.", "UI/UX Designer.", "Creator."];
+	const toRotate = [ "Full-Stack Developer.", "Front-End Developer.", "Creator."];
 	const [text, setText] = useState('');
 	const [delta, setDelta] = useState(300 - Math.random() * 100)
 	const period = 2000;
@@ -20,7 +20,7 @@ const Introduction = () =>{
 		if(isDeleting){
 			setDelta(prevDelta => prevDelta / 2)
 		}
-
+				
 		if(!isDeleting && updatedText === fullText){
 			setIsDeleting(true);
 			setDelta(period);
