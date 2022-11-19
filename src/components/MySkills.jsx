@@ -76,7 +76,6 @@ const MySkills = ()=>{
 						<p>Experience:
 						<br />
 						<span>{skill.experinece}</span></p>
-						<svg></svg>
 					</div>
 				)
 			})
