@@ -1,3 +1,8 @@
+*{
+	overflow-x: "hidden";
+
+}
+
 :root {
     --primary-color: #ffffff;
     --secondary-color: #d50b0b;
@@ -114,10 +119,12 @@ transform-origin: top left;
 }
 
 .contact{
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
+	width: 50%;
+	
+	
 }
+
+
 
 footer{
 

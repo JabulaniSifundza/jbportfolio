@@ -2,9 +2,90 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
 export const MyApplications = ()=>{
-	const applications = [{
+	const applications = [
+		{
+			name: "Financial Modelling and Projections",
+			img: "",
+			link: "",
+			github: "",
+			description: ""
 
-	}]
+		},
+		{
+			name: "Gesture Controlled Art Gallery",
+			img: "",
+			link: "",
+			github: "",
+			description: ""
+	
+		},
+		{
+			name: "Marvel Character Arcade Game",
+			img: "",
+			link: "",
+			github: "",
+			description: ""
+	
+		},
+		{
+			name: "NBA Player Statistic Tracker",
+			img: "",
+			link: "",
+			github: "",
+			description: ""
+	
+		},
+		{
+			name: "Passage Question and Answer",
+			img: "",
+			link: "",
+			github: "",
+			description: ""
+	
+		},
+		{
+			name: "Text Toxicty Detector",
+			img: "",
+			link: "",
+			github: "",
+			description: ""
+	
+		},
+		{
+			name: "Image Classifier",
+			img: "",
+			link: "",
+			github: "",
+			description: ""
+	
+		},
+		{
+			name: "Full Stack Netflix Clone",
+			img: "",
+			link: "",
+			github: "",
+			description: ""
+	
+		},
+		{
+			name: "Workout Helper",
+			img: "",
+			link: "",
+			github: "",
+			description: ""
+	
+		},
+		{
+			name: "Stock Watchlist",
+			img: "",
+			link: "",
+			github: "",
+			description: ""
+
+		}
+		
+
+	]
 
 	const responsive ={
 		desktop: {

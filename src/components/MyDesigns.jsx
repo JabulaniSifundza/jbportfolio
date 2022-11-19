@@ -4,20 +4,44 @@ import 'react-multi-carousel/lib/styles.css';
 
 export const MyDesigns = ()=>{
 	
-	const prototypes = [{
+	const prototypes = [
+	{
+		name: "Micro Loan Management",
+		img: "",
+		description: "This design proptotype was creacted for a multinational micro-loan company. The aim was to enable users to request loans online and kepp track of outstanding amounts and interest payments.",
+		link: ""
+	},
+	{
+		name: "Local Stock Exchange",
+		img: "",
+		description: "This design proptotype was creacted for a multinational micro-loan company. The aim was to enable users to request loans online and kepp track of outstanding amounts and interest payments.",
+		link: ""
+	},
+	{
+		name: "Online Hardware Store",
+		img: "",
+		description: "This design proptotype was creacted for a multinational micro-loan company. The aim was to enable users to request loans online and kepp track of outstanding amounts and interest payments.",
+		link: ""
+	},
+	{
+		name: "Life Insurance",
+		img: "",
+		description: "This design proptotype was creacted for a multinational micro-loan company. The aim was to enable users to request loans online and kepp track of outstanding amounts and interest payments.",
+		link: ""
+	},
 
-	}]
+]
 
 	const responsive ={
 		desktop: {
 			breakpoint: {max: 3000, min: 1024},
-			items: 3, 
-			slidesToSlide: 3
+			items: 1, 
+			slidesToSlide: 1
 		},
 		tablet: {
 			breakpoint: {max: 1024, min: 464},
-			items: 2, 
-			slidesToSlide: 2
+			items: 1, 
+			slidesToSlide: 1
 		},
 		mobile: {
 			breakpoint: {max:464, min: 0},
