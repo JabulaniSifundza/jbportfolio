@@ -1,8 +1,8 @@
-import {useState} from ' react';
+import {useState} from 'react';
 import {MyApplications} from './MyApplications';
 import {MyDesigns} from './MyDesigns';
 
-export const Projects = ()=>{
+const Projects = ()=>{
 	const projectTypes = ["Applications", "UI/UX Designs"];
 	const [projectType, setProjectType] = useState('Applications');
 
@@ -30,3 +30,4 @@ export const Projects = ()=>{
 		</div>
 	)
 }
+export default Projects;

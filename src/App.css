@@ -223,6 +223,70 @@ svg{
 
 }
 
+.appCard{
+	width: 100%;
+	padding: 2rem;
+	margin-top: 90px;
+}
+
+.carousel{
+	width: 680px;
+	margin-left: 100px
+}
+
+.carousel-button-group{
+	position: absolute;
+	width: 100%;
+	top: 80%;
+}
+
+.nextBtn{
+	position: absolute;
+	z-index: 2;
+	top: 60%;
+	transform: translateY(-50%);
+	width: 48px;
+	height: 48px;
+	border-radius: 24px;
+	background-color: black;
+	right: 3%;
+	border: none;
+}
+
+.prevBtn{
+	position: absolute;
+	z-index: 2;
+	top: 60%;
+	transform: translateY(-50%);
+	width: 48px;
+	height: 48px;
+	border-radius: 24px;
+	background-color: black;
+	border: none;
+	left: 24px;
+}
+
+.projectsContainer{
+	margin-top: 40px;
+}
+
+.appPic{
+
+}
+
+.appDesc{
+	font-size: 20px;
+}
+
+.projectName{
+	font-size: 30px;
+	display: block;
+}
+
+.appLinks{
+
+}
+
 footer{
 
 }
@@ -330,21 +394,6 @@ section{
 
 }
 
-.appCard{
-
-}
-
-.appPic{
-
-}
-
-.appDesc{
-
-}
-
-.appLinks{
-
-}
 
 .getIntouch{
 

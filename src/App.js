@@ -9,6 +9,7 @@ import Introduction from './components/Introduction';
 import AboutMe from './components/AboutMe';
 import LanyardDetails from './components/LanyardDetails';
 import MySkills from './components/MySkills';
+import Projects from './components/Projects';
 
 
 export function TextMe(props) {
@@ -205,6 +206,7 @@ function App() {
 					<PerspectiveCamera makeDefault aspect={1200 / 600} position={[5, -5, 100]} fov={80}/>
 				</Suspense>
 			</Canvas>
+			<Projects />
 	   </div>
 
 	   <Canvas className="contact">

@@ -28,7 +28,7 @@ export const MyApplications = ()=>{
 	
 		},
 		{
-			name: "NBA Player Statistic Tracker",
+			name: "NBA Player Statistic Visualizer",
 			img: "",
 			link: "",
 			github: "",
@@ -90,13 +90,13 @@ export const MyApplications = ()=>{
 	const responsive ={
 		desktop: {
 			breakpoint: {max: 3000, min: 1024},
-			items: 3, 
-			slidesToSlide: 3
+			items: 1, 
+			slidesToSlide: 1
 		},
 		tablet: {
 			breakpoint: {max: 1024, min: 464},
-			items: 2, 
-			slidesToSlide: 2
+			items: 1, 
+			slidesToSlide: 1
 		},
 		mobile: {
 			breakpoint: {max:464, min: 0},
@@ -105,32 +105,49 @@ export const MyApplications = ()=>{
 		}
 	}
 
+	const ButtonGroup = ({ next, previous, ...rest }) => {
+		const { carouselState: { currentSlide } } = rest;
+		return (
+		  <div className="carousel-button-group">
+			<button className={currentSlide === 0 ? 'disable' : 'prevBtn'} onClick={() => previous()} />
+			<button onClick={() => next()} className="nextBtn"/>
+		  </div>
+		);
+	  };
+
+	
+
 	return (
-		<Carousel
-		swipeable={true}
-		draggable={false}
-		showDots={false}
-		responsive={responsive}
-		infinite={true}
-		keyBoardControl={true}
-		transitionDuration={800}
-		removeArrowOnDeviceType={["tablet", "mobile"]}>
-		{
-			applications.map((app)=>{
-				return (
-					<div className="appCard" key={app.name}>
-						<img src={app.img} alt="" className="appPic" />
-						<h4>{app.name}</h4>
-						<p className="appDesc">{app.description}</p>
-						<div className="appLinks">
-							<a href={app.link}>Demo</a>
-							<a href={app.github}>Github Repo</a>
+		
+			<Carousel
+			className="carousel"
+			arrows={false} 
+			customButtonGroup={<ButtonGroup />}
+			swipeable={true}
+			draggable={false}
+			showDots={false}
+			responsive={responsive}
+			infinite={true}
+			keyBoardControl={true}
+			transitionDuration={800}
+			removeArrowOnDeviceType={["tablet", "mobile"]}>
+			{
+				applications.map((app)=>{
+					return (
+						<div className="appCard" key={app.name}>
+							<img src={app.img} alt="" className="appPic" />
+							<h4 className="projectName">{app.name}</h4>
+							<p className="appDesc">{app.description}</p>
+							<div className="appLinks">
+								<a href={app.link}>Demo</a>
+								<a href={app.github}>Github Repo</a>
+							</div>
 						</div>
-					</div>
-				)
-			})
-		}
-		</Carousel>
+					)
+				})
+			}
+			</Carousel>
+		
 	)
 
 }
