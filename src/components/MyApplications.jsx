@@ -1,11 +1,17 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import barChart from '../images/barChart.png';
+import coin from '../images/coin.png';
+import gameIcon from '../images/gameIcon.png';
+import gesture from '../images/handGesture.png';
+import stockChart from '../images/stockChart.png';
+
 
 export const MyApplications = ()=>{
 	const applications = [
 		{
 			name: "Financial Modelling and Projections",
-			img: "",
+			img: coin,
 			link: "",
 			github: "",
 			description: ""
@@ -13,7 +19,7 @@ export const MyApplications = ()=>{
 		},
 		{
 			name: "Gesture Controlled Art Gallery",
-			img: "",
+			img: gesture,
 			link: "",
 			github: "",
 			description: ""
@@ -21,7 +27,7 @@ export const MyApplications = ()=>{
 		},
 		{
 			name: "Marvel Character Arcade Game",
-			img: "",
+			img: gameIcon,
 			link: "",
 			github: "",
 			description: ""
@@ -29,7 +35,7 @@ export const MyApplications = ()=>{
 		},
 		{
 			name: "NBA Player Statistic Visualizer",
-			img: "",
+			img: barChart,
 			link: "",
 			github: "",
 			description: ""
@@ -77,7 +83,7 @@ export const MyApplications = ()=>{
 		},
 		{
 			name: "Stock Watchlist",
-			img: "",
+			img: stockChart,
 			link: "",
 			github: "",
 			description: ""
