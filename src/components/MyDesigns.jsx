@@ -1,5 +1,9 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import select from '../images/selectDesign.png';
+import united from '../images/unitedAssureDesign.png';
+import cashbuild from '../images/cashBuildDesign.png';
+import stockExchange from '../images/eseDesign.png';
 
 
 export const MyDesigns = ()=>{
@@ -7,25 +11,25 @@ export const MyDesigns = ()=>{
 	const prototypes = [
 	{
 		name: "Micro Loan Management",
-		img: "",
+		img: select,
 		description: "This design proptotype was creacted for a multinational micro-loan company. The aim was to enable users to request loans online and kepp track of outstanding amounts and interest payments.",
 		link: ""
 	},
 	{
 		name: "Local Stock Exchange",
-		img: "",
+		img: stockExchange,
 		description: "This design proptotype was creacted for a multinational micro-loan company. The aim was to enable users to request loans online and kepp track of outstanding amounts and interest payments.",
 		link: ""
 	},
 	{
 		name: "Online Hardware Store",
-		img: "",
+		img: cashbuild,
 		description: "This design proptotype was creacted for a multinational micro-loan company. The aim was to enable users to request loans online and kepp track of outstanding amounts and interest payments.",
 		link: ""
 	},
 	{
 		name: "Life Insurance",
-		img: "",
+		img: united,
 		description: "This design proptotype was creacted for a multinational micro-loan company. The aim was to enable users to request loans online and kepp track of outstanding amounts and interest payments.",
 		link: ""
 	},
@@ -50,8 +54,21 @@ export const MyDesigns = ()=>{
 		}
 	}
 
+	const ButtonGroup = ({ next, previous, ...rest }) => {
+		const { carouselState: { currentSlide } } = rest;
+		return (
+		  <div className="carousel-button-group">
+			<button className={currentSlide === 0 ? 'disable' : 'prevBtn'} onClick={() => previous()} />
+			<button onClick={() => next()} className="nextBtn"/>
+		  </div>
+		);
+	};
+
 	return (
 		<Carousel
+		className="carousel"
+		arrows={false} 
+		customButtonGroup={<ButtonGroup />}
 		swipeable={true}
 		draggable={false}
 		showDots={false}
@@ -64,8 +81,8 @@ export const MyDesigns = ()=>{
 			prototypes.map((app)=>{
 				return (
 					<div className="appCard" key={app.name}>
-						<img src={app.img} alt="" className="appPic" />
-						<h4>{app.name}</h4>
+						<img src={app.img} alt="" className="designPic" />
+						<h4 className="projectName">{app.name}</h4>
 						<p className="appDesc">{app.description}</p>
 						<div className="appLinks">
 							<a href={app.link}>Demo</a>
