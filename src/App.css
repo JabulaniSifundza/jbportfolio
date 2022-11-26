@@ -8,6 +8,14 @@ https://www.linkedin.com/in/jabulani-sifundza
 https://github.com/JabulaniSifundza
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Oswald:wght@300;400&family=Ubuntu:wght@300;400&display=swap');
+
+/*
+font-family: 'Orbitron', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
 :root {
     --primary-color: #ffffff;
     --secondary-color: #d50b0b;
@@ -171,6 +179,20 @@ svg{
 
 .platformIcon{
 	cursor: pointer;
+}
+
+.footerIconG{
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	margin-right: 20px;
+}
+
+.footerIconL{
+	cursor: pointer;
+	width: 45px;
+	height: 40px;
+	margin-left: 20px;
 }
 
 .lanyardMe{
@@ -482,6 +504,19 @@ footer{
 
 }
 
+.socialLinks{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	justify-self: center;
+	align-self: center;
+}
+
+.credits{
+	justify-self: center;
+	align-self: center;
+}
+
 h1{
 
 }
@@ -532,9 +567,6 @@ section{
 
 
 
-.credits{
-
-}
 
 .assetSources{
 

@@ -19,7 +19,7 @@ export const MyApplications = ()=>{
 			img: coin,
 			link: "",
 			github: "",
-			description: "A react application that allows users to read public company financials inlcuding Income Statements, Balance Sheets and Cash Flow Statements. Users can visualize selected financial statistics on different types of graphs. Users can create forecasts for these public companies' financials by adjusting certain factors that impact costs and income to gauge the company's potential financial standing in the future. Users can also create their own income statement by populating inputs to get the value of essential metrics and ratios for their business."
+			description: "A React application that allows users to read public company financials inlcuding Income Statements, Balance Sheets and Cash Flow Statements. Users can visualize selected financial statistics on different types of graphs. Users can create forecasts for these public companies' financials by adjusting certain factors that impact costs and income to gauge the company's potential financial standing in the future. Users can also create their own income statement by populating inputs to get the value of essential metrics and ratios for their business."
 
 		},
 		{
@@ -67,7 +67,7 @@ export const MyApplications = ()=>{
 			img: bot,
 			link: "",
 			github: "",
-			description: "A react application that allows users to upload or provide links to images they would like classified. The application then uses a TensorFlow Machine Learning Model to analyze and predict/classify the objects that exist within the image."
+			description: "A React application that allows users to upload or provide links to images they would like classified. The application then uses a TensorFlow Machine Learning Model to analyze and predict/classify the objects that exist within the image."
 	
 		},
 		{

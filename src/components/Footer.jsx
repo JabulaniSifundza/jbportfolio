@@ -21,10 +21,10 @@ const Footer = () =>{
 			</div>
 			<div className="socialLinks">
 				<div>
-					<img src={gitHub} alt="" onClick={toGithub} className="platformIcon"/>
+					<img src={gitHub} alt="" onClick={toGithub} className="footerIconG"/>
 				</div>
 				<div>
-					<img src={linkedIn} alt="" onClick={toLinkedIn} className="platformIcon"/>
+					<img src={linkedIn} alt="" onClick={toLinkedIn} className="footerIconL"/>
 				</div>
 			</div>
 		</footer>
