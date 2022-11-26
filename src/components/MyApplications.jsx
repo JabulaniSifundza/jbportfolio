@@ -71,14 +71,6 @@ export const MyApplications = ()=>{
 	
 		},
 		{
-			name: "Full Stack Netflix Clone",
-			img: tv,
-			link: "",
-			github: "",
-			description: "A full-stack streaming service/Netflix clone."
-	
-		},
-		{
 			name: "Workout Helper",
 			img: bicep,
 			link: "",
@@ -93,6 +85,14 @@ export const MyApplications = ()=>{
 			github: "",
 			description: "A single page React application that allows users to search and find company stock prices. Users can access historical data, visualize trajectory using stock charts and add company stocks to their wtachlist to access later."
 
+		},
+		{
+			name: "Full Stack Netflix Clone",
+			img: tv,
+			link: "",
+			github: "",
+			description: "A full-stack streaming service/Netflix clone."
+	
 		}
 	
 	]
@@ -119,8 +119,12 @@ export const MyApplications = ()=>{
 		const { carouselState: { currentSlide } } = rest;
 		return (
 		  <div className="carousel-button-group">
-			<button className={currentSlide === 0 ? 'disable' : 'prevBtn'} onClick={() => previous()} />
-			<button onClick={() => next()} className="nextBtn"/>
+			<button className={currentSlide === 0 ? 'disable' : 'prevBtn'} onClick={() => previous()}>
+				<svg className="prevArrow"></svg>
+			</button>
+			<button onClick={() => next()} className="nextBtn">
+				<svg className="nextArrow"></svg>
+			</button>
 		  </div>
 		);
 	  };
@@ -149,8 +153,8 @@ export const MyApplications = ()=>{
 							<h4 className="projectName">{app.name}</h4>
 							<p className="appDesc">{app.description}</p>
 							<div className="appLinks">
-								<a href={app.link}>Demo</a>
-								<a href={app.github}>Github Repo</a>
+								<a href={app.link} className="appLink1">Demo</a>
+								<a href={app.github} className="appLink2">Github Repo</a>
 							</div>
 						</div>
 					)

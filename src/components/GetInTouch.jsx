@@ -1,11 +1,8 @@
 import React from 'react';
-import {MailToButton} from './MailToButton';
 
 
 
-
-
-export const GetInTouch = ()=>{
+const GetInTouch = ()=>{
 	const downloadResume = () =>{
 		fetch('JabulaniSifundza.pdf').then(response =>{
 			response.blob().then(blob =>{
@@ -20,15 +17,17 @@ export const GetInTouch = ()=>{
 
 	return (
 		<div className="getIntouch">
-		{/*Remember to place RESUMER PDF in the Public Directory so the download works*/}
-		<h3>
-		Would you like to learn more about me or get in touch?
-		</h3>
+			{/*Remember to place RESUMER PDF in the Public Directory so the download works*/}
+			<h3 className="centered">
+				Would you like to learn more about me or contact me?
+			</h3>
 
-		<div className="contactOptions">
-			<MailToButton label="Email Me" mailto="mailto:jjsifundza@gmail.com"/>
-			<button className="contactBtn" onClick={downloadResume}>Download My Resume</button>
-		</div>
+			<div className="contactOptions">
+				<button className="contactBtn" onClick={()=> window.location = 'mailto:jjsifundza@gmail.com'}>Contact Me</button>
+				<button className="contactBtn" onClick={downloadResume}>Download My Resume</button>
+			</div>
 		</div>
 	)
 }
+
+export default GetInTouch

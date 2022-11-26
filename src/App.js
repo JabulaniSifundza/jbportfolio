@@ -10,6 +10,11 @@ import AboutMe from './components/AboutMe';
 import LanyardDetails from './components/LanyardDetails';
 import MySkills from './components/MySkills';
 import Projects from './components/Projects';
+import SkillsTitle from './components/SkillsTitle';
+import PortfolioTitle from './components/PortfolioTitle';
+import GetInTouch from './components/GetInTouch';
+import GetInTouchTitle from './components/GetInTouchTitle';
+import Footer from './components/Footer';
 
 
 export function TextMe(props) {
@@ -21,7 +26,7 @@ export function TextMe(props) {
 	},[actions])
 	return (
 	  <group ref={group} {...props} dispose={null}>
-		<group name="Scene" position={[-80, -80, 8]} scale={80}>
+		<group name="Scene" position={[-60, -80, 8]} scale={80}>
 		  <group name="Armature">
 			<primitive object={nodes.Hips} />
 			<skinnedMesh name="Wolf3D_Body" geometry={nodes.Wolf3D_Body.geometry} material={materials.Wolf3D_Body} skeleton={nodes.Wolf3D_Body.skeleton} />
@@ -184,6 +189,7 @@ function App() {
 			<AboutMe />
 	   </div>
 
+		<SkillsTitle />
 
 	   <div className="skills">
 			<MySkills />
@@ -197,6 +203,7 @@ function App() {
 			</Canvas>
 	   </div>
 
+	   <PortfolioTitle />
 	   <div className="projects">
 	   		<Canvas>
 				<Suspense fallback={null}>
@@ -209,6 +216,12 @@ function App() {
 			<Projects />
 	   </div>
 
+	   <GetInTouchTitle />
+
+		<div className="contactDetails">
+			<GetInTouch />
+		</div>
+
 	   <Canvas className="contact">
 			<Suspense fallback={null}>
 				<ambientLight intensity={0.5} />
@@ -217,6 +230,8 @@ function App() {
 				<PerspectiveCamera makeDefault aspect={1200 / 600} position={[-60, 0, 150]} fov={70}/>
 			</Suspense>
 	   </Canvas>
+
+	   <Footer />
 	   <Loader />
 	</div>
   );

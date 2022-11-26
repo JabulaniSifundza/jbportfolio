@@ -63,9 +63,6 @@ const MySkills = ()=>{
 
    return (
 	<div className="skillsCard">
-		<h2>
-			My Skills
-		</h2>
 		<div className="skillsHolder">
 		{
 			skills.map((skill)=>{

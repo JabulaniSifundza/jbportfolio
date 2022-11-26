@@ -58,8 +58,12 @@ export const MyDesigns = ()=>{
 		const { carouselState: { currentSlide } } = rest;
 		return (
 		  <div className="carousel-button-group">
-			<button className={currentSlide === 0 ? 'disable' : 'prevBtn'} onClick={() => previous()} />
-			<button onClick={() => next()} className="nextBtn"/>
+			<button className={currentSlide === 0 ? 'disable' : 'prevBtn'} onClick={() => previous()} >
+				<svg className="prevArrow"></svg>
+			</button>
+			<button onClick={() => next()} className="nextBtn">
+				<svg className="nextArrow"></svg>
+			</button>
 		  </div>
 		);
 	};
@@ -84,8 +88,8 @@ export const MyDesigns = ()=>{
 						<img src={app.img} alt="" className="designPic" />
 						<h4 className="projectName">{app.name}</h4>
 						<p className="appDesc">{app.description}</p>
-						<div className="appLinks">
-							<a href={app.link}>Demo</a>
+						<div className="prototypeDemo">
+							<a href={app.link} className="prototypeLink">Demo</a>
 						</div>
 					</div>
 				)

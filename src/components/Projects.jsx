@@ -20,7 +20,7 @@ const Projects = ()=>{
 			}
 			</div>
 
-			<div className="projects">
+			<div className="projectCards">
 				{projectType === "Applications" && (<MyApplications />)}
 				{projectType === "UI/UX Designs" && (<MyDesigns />)}			
 			</div>
