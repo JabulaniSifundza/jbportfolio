@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "framer-motion";
 
 
 
@@ -23,8 +24,21 @@ const GetInTouch = ()=>{
 			</h3>
 
 			<div className="contactOptions">
-				<button className="contactBtn" onClick={()=> window.location = 'mailto:jjsifundza@gmail.com'}>Contact Me</button>
-				<button className="contactBtn" onClick={downloadResume}>Download My Resume</button>
+				<motion.button 
+				className="contactBtn" 
+				whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+				onClick={()=> window.location = 'mailto:jjsifundza@gmail.com'}>
+					Contact Me
+				</motion.button>
+
+				<motion.button 
+				whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+				className="contactBtn" 
+				onClick={downloadResume}>
+					Download My Resume
+				</motion.button>
 			</div>
 		</div>
 	)

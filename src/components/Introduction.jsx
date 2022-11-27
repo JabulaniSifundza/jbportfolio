@@ -42,13 +42,36 @@ const Introduction = () =>{
 
 
 	return (
-		<div className="intro">
-			<section className="info">
-				<h3 className="myName">Hi there, my name is Jabulani.</h3>
-				<br />
-				<h2 className="occupation">{`I'm a `}<span className="typing">{text}</span></h2>
-			</section>
+		<div className="container">
+			<div className="screen monitor">
+				<div className="content">
+					<div className="intro">
+						<section className="info">
+							<h3 className="myName">Hi there, my name is Jabulani.</h3>
+							<br />
+							<h2 className="occupation">{`I'm a `}<span className="typing">{text}</span></h2>
+						</section>
+					</div>
+				</div>
+			<div className="base">
+			<div className="grey-shadow"></div>
+			<div className="foot top"></div>
+				<div className="foot bottom"></div>
+					<div className="shadow"></div>
+						<div className="keyboard">
+							<div className="btm"></div>
+							<ul className="keys">
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						<div className="shadow"></div>
+					</div>
+				</div>
+			</div>
 		</div>
+		
 	)
 }
 

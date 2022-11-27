@@ -8,11 +8,10 @@ const Header = () =>{
 				<img src={myLogo} alt="" className="myLogo" />
 			</div>
 			<div className="navigate">
-				<button className="navBtn">About</button>
-				<button className="navBtn">Projects</button>
-				<button className="navBtn">Resume</button>
-				<button className="navBtn">Contact</button>
-				
+				<button className="navBtn" onClick={()=> window.scrollBy(0, 780, {behavior: 'smooth'})}>About</button>
+				<button className="navBtn" onClick={()=> window.scrollBy(0, 2480, {behavior: 'smooth'})}>Projects</button>
+				<button className="navBtn" onClick={()=> window.scrollBy(0, 3380, {behavior: 'smooth'})}>Resume</button>
+				<button className="navBtn" onClick={()=> window.scrollBy(0, 3380, {behavior: 'smooth'})}>Contact</button>
 			</div>
 		</header>
 	)

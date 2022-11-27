@@ -70,9 +70,9 @@ const MySkills = ()=>{
 					<div key={skill.skillName}>
 						<img src={skill.skillIcon} alt={skill.skillName} className="skillIcon"/>
 						<h4>{skill.skillName}</h4>
-						<p>Experience:
+						<p className="xpTitle">Experience:
 						<br />
-						<span>{skill.experinece}</span></p>
+						<span className="xpAmount">{skill.experinece}</span></p>
 					</div>
 				)
 			})

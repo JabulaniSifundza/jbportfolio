@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import {MyApplications} from './MyApplications';
 import {MyDesigns} from './MyDesigns';
+import { motion } from "framer-motion"
 
 const Projects = ()=>{
 	const projectTypes = ["Applications", "UI/UX Designs"];
@@ -12,11 +13,17 @@ const Projects = ()=>{
 			{
 				projectTypes.map(project =>{
 					return (
-						<button type="button" className="selectType" key={project} onClick={()=> setProjectType(project)}>
+						<motion.button 
+						whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+						type="button" 
+						className="selectType" 
+						key={project} 
+						onClick={()=> setProjectType(project)}>
 						{project}
-						</button>
+						</motion.button>
 					)
-				})
+				})					
 			}
 			</div>
 

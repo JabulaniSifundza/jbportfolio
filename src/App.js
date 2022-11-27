@@ -3,6 +3,7 @@ import * as THREE from 'three';
 import './App.css';
 import {Canvas, useFrame} from '@react-three/fiber';
 import {useGLTF, PerspectiveCamera, Loader, useAnimations, OrbitControls, Html} from '@react-three/drei';
+import { motion } from "framer-motion";
 
 import Header from './components/Header';
 import Introduction from './components/Introduction';
@@ -136,7 +137,7 @@ export function Lanyard(props) {
 		  <mesh geometry={nodes.headband.geometry} material={materials['FABRIC 1_FRONTU3.001']} />
 		  <mesh geometry={nodes.Hook.geometry} material={materials['Hook.002']} position={[0, -4.12, 0]} rotation={[-Math.PI / 2, 0, -Math.PI / 2]} />
 		  <mesh geometry={nodes.paper.geometry} material={materials['Card.002']} >
-			<Html className="content" rotation-x={Math.PI / 1} rotation-z={Math.PI / 280} position={[0, 0.05, -0.09]} transform occlude>
+			<Html className="LanContent" rotation-x={Math.PI / 1} rotation-z={Math.PI / 280} position={[0, 0.05, -0.09]} transform occlude>
 				<div className="wrapper">
 					<LanyardDetails />
 				</div>
@@ -176,7 +177,14 @@ function App() {
 		
 	   </div>
 
-	   <div className="info">
+	   <motion.div className="workinfo"
+		initial={{ opacity: 0 }}
+		whileInView={{ opacity: 1 }}
+		viewport={{ once: true }}
+		transition={{
+			delay: 0.3,
+			duration: 2
+		 }}>
 			<Canvas className="lanyard">
 				<Suspense fallback={null}>
 				<ambientLight intensity={0.4} />
@@ -187,11 +195,18 @@ function App() {
 			</Suspense>
 			</Canvas>
 			<AboutMe />
-	   </div>
-
+	   </motion.div>
 		<SkillsTitle />
 
-	   <div className="skills">
+	   <motion.div 
+	   initial={{ opacity: 0 }}
+		whileInView={{ opacity: 1 }}
+		viewport={{ once: true }}
+		transition={{
+			delay: 0.4,
+			duration: 2
+		 }}
+	   className="skills">
 			<MySkills />
 			<Canvas>
 				<Suspense fallback={null}>
@@ -201,10 +216,18 @@ function App() {
 				<PerspectiveCamera makeDefault aspect={1200 / 600} position={[5, 160, 200]} fov={80}/>
 				</Suspense>
 			</Canvas>
-	   </div>
+	   </motion.div>
 
 	   <PortfolioTitle />
-	   <div className="projects">
+	   <motion.div 
+	   initial={{ opacity: 0 }}
+		whileInView={{ opacity: 1 }}
+		viewport={{ once: true }}
+		transition={{
+			delay: 0.4,
+			duration: 2
+		 }}
+	   className="projects">
 	   		<Canvas>
 				<Suspense fallback={null}>
 					<ambientLight intensity={0.5} />
@@ -214,13 +237,21 @@ function App() {
 				</Suspense>
 			</Canvas>
 			<Projects />
-	   </div>
+	   </motion.div>
 
 	   <GetInTouchTitle />
 
-		<div className="contactDetails">
+		<motion.div
+		initial={{ opacity: 0 }}
+		whileInView={{ opacity: 1 }}
+		viewport={{ once: true }}
+		transition={{
+			delay: 0.4,
+			duration: 2
+		 }}
+		className="contactDetails">
 			<GetInTouch />
-		</div>
+		</motion.div>
 
 	   <Canvas className="contact">
 			<Suspense fallback={null}>
@@ -230,7 +261,6 @@ function App() {
 				<PerspectiveCamera makeDefault aspect={1200 / 600} position={[-60, 0, 150]} fov={70}/>
 			</Suspense>
 	   </Canvas>
-
 	   <Footer />
 	   <Loader />
 	</div>
