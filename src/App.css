@@ -466,6 +466,9 @@ svg{
 }
 
 .prototypeLink{
+	font-family: 'Orbitron', sans-serif;
+	font-size: 16.56px;
+	font-weight: 500;
 	border-radius: 12px;
 	text-decoration: none;
 	background-color: var(--complimentary-color);
