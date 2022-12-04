@@ -33,16 +33,16 @@ export const MyApplications = ()=>{
 		{
 			name: "Marvel Character Arcade Game",
 			img: gameIcon,
-			link: "",
-			github: "",
+			link: "https://marvelgame.web.app/",
+			github: "https://github.com/JabulaniSifundza/marvel",
 			description: "A two player arcade style game featuring some of Marvel's characters. Player controls can be viewed within the game which features battles between selected characters."
 	
 		},
 		{
 			name: "Stock Watchlist",
 			img: stockChart,
-			link: "",
-			github: "",
+			link: "https://jabulanistockwatch.web.app/",
+			github: "https://github.com/JabulaniSifundza/stockapp",
 			description: "A single page React application that allows users to search, find and track company stock prices. Users can access historical data for their selected time period, visualize trajectory using stock charts and add company stocks to their wtachlist to access later."
 
 		},
