@@ -39,6 +39,14 @@ export const MyApplications = ()=>{
 	
 		},
 		{
+			name: "Stock Watchlist",
+			img: stockChart,
+			link: "",
+			github: "",
+			description: "A single page React application that allows users to search, find and track company stock prices. Users can access historical data for their selected time period, visualize trajectory using stock charts and add company stocks to their wtachlist to access later."
+
+		},
+		{
 			name: "NBA Player Statistic Visualizer",
 			img: barChart,
 			link: "",
@@ -77,14 +85,6 @@ export const MyApplications = ()=>{
 			github: "",
 			description: "An application that lets users search and find workouts according their own criteria. This application also provides users with links to YouTube videos that provide instructions on how to perform the desired excersises."
 	
-		},
-		{
-			name: "Stock Watchlist",
-			img: stockChart,
-			link: "",
-			github: "",
-			description: "A single page React application that allows users to search and find company stock prices. Users can access historical data, visualize trajectory using stock charts and add company stocks to their wtachlist to access later."
-
 		},
 		{
 			name: "Full Stack Netflix Clone",
