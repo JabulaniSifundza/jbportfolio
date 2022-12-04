@@ -63,19 +63,19 @@ export const MyApplications = ()=>{
 	
 		},
 		{
-			name: "Text Toxicty Detector",
-			img: toxic,
-			link: "",
-			github: "",
-			description: "A simple single page application that takes user input and detects whether that input/message contains any toxicity/profanity in it. This application uses TensorFlow's Toxicity Detection Machine Learning Model to determine whether inputs are toxic or not."
+			name: "Image Classifier",
+			img: bot,
+			link: "https://jabulaniimagerecognition.web.app/",
+			github: "https://github.com/JabulaniSifundza/classifier",
+			description: "A React application that allows users to upload or provide links to images they would like classified. The application then uses a TensorFlow Machine Learning Model to analyze and predict/classify the objects that exist within the image."
 	
 		},
 		{
-			name: "Image Classifier",
-			img: bot,
-			link: "",
-			github: "",
-			description: "A React application that allows users to upload or provide links to images they would like classified. The application then uses a TensorFlow Machine Learning Model to analyze and predict/classify the objects that exist within the image."
+			name: "Text Toxicty Detector",
+			img: toxic,
+			link: "https://jabulanitoxicity.web.app/",
+			github: "https://github.com/JabulaniSifundza/detectToxic",
+			description: "A simple single page application that takes user input and detects whether that input/message contains any toxicity/profanity in it. This application uses TensorFlow's Toxicity Detection Machine Learning Model to determine whether inputs are toxic or not."
 	
 		},
 		{
