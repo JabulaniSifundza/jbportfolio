@@ -248,6 +248,7 @@ svg{
 }
 .infoCard{
 	margin-top: 40px;
+	height: 600px;
 	display: flex;
 	flex-direction: column;
 	align-content: center;

@@ -17,16 +17,16 @@ export const MyApplications = ()=>{
 		{
 			name: "Financial Modelling and Projections",
 			img: coin,
-			link: "",
-			github: "",
+			link: "https://jabulanifinmodelling.web.app/",
+			github: "https://github.com/JabulaniSifundza/modellingapp",
 			description: "A React application that allows users to read public company financials inlcuding Income Statements, Balance Sheets and Cash Flow Statements. Users can visualize selected financial statistics on different types of graphs. Users can create forecasts for these public companies' financials by adjusting certain factors that impact costs and income to gauge the company's potential financial standing in the future. Users can also create their own income statement by populating inputs to get the value of essential metrics and ratios for their business."
 
 		},
 		{
 			name: "Gesture Controlled Art Gallery",
 			img: gesture,
-			link: "",
-			github: "",
+			link: "https://jabulanigesturegallery.web.app/",
+			github: "https://github.com/JabulaniSifundza/gallery",
 			description: "A gesture controlled art image gallery viewer. This application is contolled by making certain hand gestures toward the user's webcam; the user never has to you the trackpad or a mouse to scroll or browse through images in the gallery. Images of the art in this application are provided by The Chicago Art Institute API. This application uses TensorFlow's handpose copmputer vision model to estimate the position and gestures made by the user to navigate the application."
 	
 		},
@@ -47,22 +47,6 @@ export const MyApplications = ()=>{
 
 		},
 		{
-			name: "NBA Player Statistic Visualizer",
-			img: barChart,
-			link: "",
-			github: "",
-			description: "A single page application that allows to search NBA players and visualize their statictics using various types of graphs. Users the types of statistics they want to view. This application uses a free open source to provide statistics.*"
-	
-		},
-		{
-			name: "Passage Question and Answer",
-			img: bot,
-			link: "",
-			github: "",
-			description: "A single page application that allows the user to pass a passage as an input and then ask a Natural Language Processing Machine Learning Model questions on that passage, which the model provides answers to. This applicaton uses TensorFlow's BERT Q and A model to read the passage and answer the user's questions. This could be useful for users who want to extract information for long passages or in applications as customer support to answer questions about a company's services/ethos."
-	
-		},
-		{
 			name: "Image Classifier",
 			img: bot,
 			link: "https://jabulaniimagerecognition.web.app/",
@@ -71,11 +55,27 @@ export const MyApplications = ()=>{
 	
 		},
 		{
+			name: "Passage Question and Answer",
+			img: bot,
+			link: "https://jabulaniqna.web.app",
+			github: "https://github.com/JabulaniSifundza/passagereader",
+			description: "A single page application that allows the user to pass a passage as an input and then ask a Natural Language Processing Machine Learning Model questions on that passage, which the model provides answers to. This applicaton uses TensorFlow's BERT Q and A model to read the passage and answer the user's questions. This could be useful for users who want to extract information for long passages or in applications as customer support to answer questions about a company's services/ethos."
+	
+		},
+		{
 			name: "Text Toxicty Detector",
 			img: toxic,
 			link: "https://jabulanitoxicity.web.app/",
 			github: "https://github.com/JabulaniSifundza/detectToxic",
 			description: "A simple single page application that takes user input and detects whether that input/message contains any toxicity/profanity in it. This application uses TensorFlow's Toxicity Detection Machine Learning Model to determine whether inputs are toxic or not."
+	
+		},
+		{
+			name: "NBA Player Statistic Visualizer",
+			img: barChart,
+			link: "https://jabulaninbastatviewer.web.app/",
+			github: "https://github.com/JabulaniSifundza/statviewer",
+			description: "A single page application that allows to search NBA players and visualize their statictics using various types of graphs. Users the types of statistics they want to view. This application uses a free open source to provide statistics which can be unreliable at times and breaks down often.*"
 	
 		},
 		{

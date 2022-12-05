@@ -13,25 +13,25 @@ export const MyDesigns = ()=>{
 		name: "Micro Loan Management",
 		img: select,
 		description: "This design proptotype was creacted for a multinational micro-loan company. The aim was to enable users to request loans online and kepp track of outstanding amounts and interest payments.",
-		link: ""
+		link: "https://xd.adobe.com/view/39c151de-8190-4fd7-a0a9-8ac8506ce478-6c92/?fullscreen&hints=off"
 	},
 	{
 		name: "Local Stock Exchange",
 		img: stockExchange,
 		description: "This design proptotype was creacted for a multinational micro-loan company. The aim was to enable users to request loans online and kepp track of outstanding amounts and interest payments.",
-		link: ""
+		link: "https://xd.adobe.com/view/87a8b719-989a-47e5-ba29-f49fd06e7089-d2fb/?fullscreen&hints=off"
 	},
 	{
 		name: "Online Hardware Store",
 		img: cashbuild,
 		description: "This design proptotype was creacted for a multinational micro-loan company. The aim was to enable users to request loans online and kepp track of outstanding amounts and interest payments.",
-		link: ""
+		link: "https://xd.adobe.com/view/95c40449-c0d3-4b99-86a4-89b90a3aa5b9-c097/?fullscreen&hints=off"
 	},
 	{
 		name: "Life Insurance",
 		img: united,
 		description: "This design proptotype was creacted for a multinational micro-loan company. The aim was to enable users to request loans online and kepp track of outstanding amounts and interest payments.",
-		link: ""
+		link: "https://xd.adobe.com/view/ff292a6d-d6ce-4ee2-ac5e-37f53a50323e-aa7a/?fullscreen&hints=off"
 	},
 
 ]
