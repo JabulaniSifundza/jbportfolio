@@ -19,7 +19,7 @@ export const MyApplications = ()=>{
 			img: coin,
 			link: "https://jabulanifinmodelling.web.app/",
 			github: "https://github.com/JabulaniSifundza/modellingapp",
-			description: "A React application that allows users to read public company financials inlcuding Income Statements, Balance Sheets and Cash Flow Statements. Users can visualize selected financial statistics on different types of graphs. Users can create forecasts for these public companies' financials by adjusting certain factors that impact costs and income to gauge the company's potential financial standing in the future. Users can also create their own income statement by populating inputs to get the value of essential metrics and ratios for their business."
+			description: "A React application that allows users to read public company financials including Income Statements, Balance Sheets and Cash Flow Statements. Users can visualize selected financial statistics on different types of graphs. Users can create forecasts for these public companies' financials by adjusting certain factors that impact costs and income to gauge the company's potential financial standing in the future. Users can also create their own income statement by populating inputs to get the value of essential metrics and ratios for their business."
 
 		},
 		{
@@ -27,7 +27,7 @@ export const MyApplications = ()=>{
 			img: gesture,
 			link: "https://jabulanigesturegallery.web.app/",
 			github: "https://github.com/JabulaniSifundza/gallery",
-			description: "A gesture controlled art image gallery viewer. This application is contolled by making certain hand gestures toward the user's webcam; the user never has to you the trackpad or a mouse to scroll or browse through images in the gallery. Images of the art in this application are provided by The Chicago Art Institute API. This application uses TensorFlow's handpose copmputer vision model to estimate the position and gestures made by the user to navigate the application."
+			description: "A gesture controlled art image gallery viewer. This application is contolled by making certain hand gestures toward the user's webcam; the user never has to you the trackpad or a mouse to scroll or browse through images in the gallery. Images of the art in this application are provided by The Chicago Art Institute API. This application uses TensorFlow's Handpose computer vision machine learning model to estimate the position and gestures made by the user to navigate the application."
 	
 		},
 		{
