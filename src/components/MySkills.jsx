@@ -7,57 +7,59 @@ import xd from '../images/adobeXd.png';
 import gCloud from '../images/googleCloud.png';
 import firebase from '../images/firebaseLogo.png';
 import mongo from '../images/mongoLogo.png';
+import pythonLogo from '../images/pythonLogo.png'
 
 const MySkills = ()=>{
 	const skills =[
 		{
 			skillName: "Javascript",
 			skillIcon: javascript,
-			experinece: "3.5 years"
+			experience: "4 years"
 		},
 		{
 			skillName: "Node.js",
 			skillIcon: node,
-			experinece: "3 years"
+			experience: "3 years"
 		},
 		{
 			skillName: "React",
 			skillIcon: reactLogo,
-			experinece: "2.5 years"
+			experience: "3 years"
 			
+		},
+		{
+			skillName: "Python",
+			skillIcon: pythonLogo,
+			experience: "2 years"
+
 		},
 		{
 			skillName: "Tensorflow",
 			skillIcon: tensorflow,
-			experinece: "1.5 years"
+			experience: "2 years"
 		},
 		{
 			skillName: "Adobe XD",
 			skillIcon: xd,
-			experinece: "2.5 years"
+			experience: "3 years"
 		},
 		{
 			skillName: "Google Cloud",
 			skillIcon: gCloud,
-			experinece: "3 years"
+			experience: "3 years"
 		},
 		{
 			skillName: "Firebase",
 			skillIcon: firebase,
-			experinece: "3.5 years"
+			experience: "4 years"
 		},
 		{
 			skillName: "Mongo DB",
 			skillIcon: mongo,
-			experinece: "2 years"
+			experience: "2 years"
 		}
 		/*
-		{
-			skillName: Python,
-			skillIcon: "",
-			experience: 1.5 years
-
-		} 
+		 
 		*/
 	]
 
@@ -72,7 +74,7 @@ const MySkills = ()=>{
 						<h4>{skill.skillName}</h4>
 						<p className="xpTitle">Experience:
 						<br />
-						<span className="xpAmount">{skill.experinece}</span></p>
+						<span className="xpAmount">{skill.experience}</span></p>
 					</div>
 				)
 			})

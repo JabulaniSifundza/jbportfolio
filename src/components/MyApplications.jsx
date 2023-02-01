@@ -1,14 +1,12 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import barChart from '../images/barChart.png';
 import coin from '../images/coin.png';
 import gameIcon from '../images/gameIcon.png';
 import gesture from '../images/handGesture.png';
 import stockChart from '../images/stockChart.png';
 import bot from '../images/robot.png';
-import bicep from '../images/bicepIcon.png';
 import toxic from '../images/toxicityIcon.png';
-import tv from '../images/tvIcon.png';
+
 
 
 
@@ -23,19 +21,19 @@ export const MyApplications = ()=>{
 
 		},
 		{
-			name: "Gesture Controlled Art Gallery",
-			img: gesture,
-			link: "https://jabulanigesturegallery.web.app/",
-			github: "https://github.com/JabulaniSifundza/gallery",
-			description: "A gesture controlled art image gallery viewer. This application is contolled by making certain hand gestures toward the user's webcam; the user never has to you the trackpad or a mouse to scroll or browse through images in the gallery. Images of the art in this application are provided by The Chicago Art Institute API. This application uses TensorFlow's Handpose computer vision machine learning model to estimate the position and gestures made by the user to navigate the application."
-	
-		},
-		{
 			name: "Marvel Character Arcade Game",
 			img: gameIcon,
 			link: "https://marvelgame.web.app/",
 			github: "https://github.com/JabulaniSifundza/marvel",
 			description: "A two player arcade style game featuring some of Marvel's characters. Player controls can be viewed within the game which features battles between selected characters."
+	
+		},
+		{
+			name: "Gesture Controlled Art Gallery",
+			img: gesture,
+			link: "https://jabulanigesturegallery.web.app/",
+			github: "https://github.com/JabulaniSifundza/gallery",
+			description: "A gesture controlled art image gallery viewer. This application is contolled by making certain hand gestures toward the user's webcam; the user never has to you the trackpad or a mouse to scroll or browse through images in the gallery. Images of the art in this application are provided by The Chicago Art Institute API. This application uses TensorFlow's Handpose computer vision machine learning model to estimate the position and gestures made by the user to navigate the application."
 	
 		},
 		{
@@ -68,30 +66,6 @@ export const MyApplications = ()=>{
 			link: "https://jabulanitoxicity.web.app/",
 			github: "https://github.com/JabulaniSifundza/detectToxic",
 			description: "A simple single page application that takes user input and detects whether that input/message contains any toxicity/profanity in it. This application uses TensorFlow's Toxicity Detection Machine Learning Model to determine whether inputs are toxic or not."
-	
-		},
-		{
-			name: "NBA Player Statistic Visualizer",
-			img: barChart,
-			link: "https://jabulaninbastatviewer.web.app/",
-			github: "https://github.com/JabulaniSifundza/statviewer",
-			description: "A single page application that allows to search NBA players and visualize their statictics using various types of graphs. Users the types of statistics they want to view. This application uses a free open source to provide statistics which can be unreliable at times and breaks down often.*"
-	
-		},
-		{
-			name: "Workout Helper",
-			img: bicep,
-			link: "",
-			github: "",
-			description: "An application that lets users search and find workouts according their own criteria. This application also provides users with links to YouTube videos that provide instructions on how to perform the desired excersises."
-	
-		},
-		{
-			name: "Full Stack Netflix Clone",
-			img: tv,
-			link: "",
-			github: "",
-			description: "A full-stack streaming service/Netflix clone."
 	
 		}
 	
