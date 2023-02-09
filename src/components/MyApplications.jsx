@@ -13,6 +13,13 @@ import toxic from '../images/toxicityIcon.png';
 export const MyApplications = ()=>{
 	const applications = [
 		{
+			name: "Stock Price and S&P 500 Visualization",
+			img: coin,
+			link: "https://jabulanisifundza-tickers-app-zhrjio.streamlit.app",
+			github: "https://github.com/JabulaniSifundza/Tickers",
+			description: "A Python exploratory data analysis application that allows users to visualize various company stock metrics such as stock price highs, closing price and dividends per share since 2010. Users can also view S&P 500 company stock information, filter or select companies by sector and download the data in CSV format. "
+		},
+		{
 			name: "Financial Modelling and Projections",
 			img: coin,
 			link: "https://jabulanifinmodelling.web.app/",
@@ -34,7 +41,6 @@ export const MyApplications = ()=>{
 			link: "https://jabulanigesturegallery.web.app/",
 			github: "https://github.com/JabulaniSifundza/gallery",
 			description: "A gesture controlled art image gallery viewer. This application is contolled by making certain hand gestures toward the user's webcam; the user never has to you the trackpad or a mouse to scroll or browse through images in the gallery. Images of the art in this application are provided by The Chicago Art Institute API. This application uses TensorFlow's Handpose computer vision machine learning model to estimate the position and gestures made by the user to navigate the application."
-	
 		},
 		{
 			name: "Stock Watchlist",
@@ -68,7 +74,6 @@ export const MyApplications = ()=>{
 			description: "A simple single page application that takes user input and detects whether that input/message contains any toxicity/profanity in it. This application uses TensorFlow's Toxicity Detection Machine Learning Model to determine whether inputs are toxic or not."
 	
 		}
-	
 	]
 
 	const responsive ={
