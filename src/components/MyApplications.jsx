@@ -7,6 +7,7 @@ import stockChart from '../images/stockChart.png';
 import bot from '../images/robot.png';
 import toxic from '../images/toxicityIcon.png';
 
+//https://jabulanisifundza-nba-app-0m1ydr.streamlit.app
 
 
 
@@ -17,15 +18,7 @@ export const MyApplications = ()=>{
 			img: coin,
 			link: "https://jabulanisifundza-tickers-app-zhrjio.streamlit.app",
 			github: "https://github.com/JabulaniSifundza/Tickers",
-			description: "A Python exploratory data analysis application that allows users to visualize various company stock metrics such as stock price highs, closing price and dividends per share since 2010. Users can also view S&P 500 company stock information, filter or select companies by sector and download the data in CSV format. "
-		},
-		{
-			name: "Financial Modelling and Projections",
-			img: coin,
-			link: "https://jabulanifinmodelling.web.app/",
-			github: "https://github.com/JabulaniSifundza/modellingapp",
-			description: "A React application that allows users to read public company financials including Income Statements, Balance Sheets and Cash Flow Statements. Users can visualize selected financial statistics on different types of graphs. Users can create forecasts for these public companies' financials by adjusting certain factors that impact costs and income to gauge the company's potential financial standing in the future. Users can also create their own income statement by populating inputs to get the value of essential metrics and ratios for their business."
-
+			description: "A Python exploratory data analysis application that allows users to visualize various company stock metrics such as stock price highs, closing price and dividends per share since 2010. Users can also view S&P 500 company stock information, filter or select companies by sector and download the data in CSV format."
 		},
 		{
 			name: "Marvel Character Arcade Game",
@@ -36,18 +29,26 @@ export const MyApplications = ()=>{
 	
 		},
 		{
+			name: "NBA Team, Position and Player Statistics Visualizer",
+			img: stockChart,
+			link: "https://jabulanisifundza-nba-app-0m1ydr.streamlit.app",
+			github: "https://github.com/JabulaniSifundza/NBA",
+			description: "A Python exploratory data analysis application that allows users to visualize various NBA statistics. Users can see all team and player statistics in tabular form. Data can be filtered by team and player position. Users can visualize individual player statistics by searching for a player by their fullname and visualize offensive, defensive and rebounding statistics."
+
+		},
+		{
 			name: "Gesture Controlled Art Gallery",
 			img: gesture,
 			link: "https://jabulanigesturegallery.web.app/",
 			github: "https://github.com/JabulaniSifundza/gallery",
-			description: "A gesture controlled art image gallery viewer. This application is contolled by making certain hand gestures toward the user's webcam; the user never has to you the trackpad or a mouse to scroll or browse through images in the gallery. Images of the art in this application are provided by The Chicago Art Institute API. This application uses TensorFlow's Handpose computer vision machine learning model to estimate the position and gestures made by the user to navigate the application."
+			description: "A React gesture controlled art image gallery viewer. This application is contolled by making certain hand gestures toward the user's webcam; the user never has to you the trackpad or a mouse to scroll or browse through images in the gallery. Images of the art in this application are provided by The Chicago Art Institute API. This application uses TensorFlow's Handpose computer vision machine learning model to estimate the position and gestures made by the user to navigate the application."
 		},
 		{
-			name: "Stock Watchlist",
-			img: stockChart,
-			link: "https://jabulanistockwatch.web.app/",
-			github: "https://github.com/JabulaniSifundza/stockapp",
-			description: "A single page React application that allows users to search, find and track company stock prices. Users can access historical data for their selected time period, visualize trajectory using stock charts and add company stocks to their wtachlist to access later."
+			name: "Financial Modelling and Projections",
+			img: coin,
+			link: "https://jabulanifinmodelling.web.app/",
+			github: "https://github.com/JabulaniSifundza/modellingapp",
+			description: "A React application that allows users to read public company financials including Income Statements, Balance Sheets and Cash Flow Statements. Users can visualize selected financial statistics on different types of graphs. Users can create forecasts for these public companies' financials by adjusting certain factors that impact costs and income to gauge the company's potential financial standing in the future. Users can also create their own income statement by populating inputs to get the value of essential metrics and ratios for their business."
 
 		},
 		{
@@ -65,6 +66,14 @@ export const MyApplications = ()=>{
 			github: "https://github.com/JabulaniSifundza/passagereader",
 			description: "A single page application that allows the user to pass a passage as an input and then ask a Natural Language Processing Machine Learning Model questions on that passage, which the model provides answers to. This applicaton uses TensorFlow's BERT Q and A model to read the passage and answer the user's questions. This could be useful for users who want to extract information for long passages or in applications as customer support to answer questions about a company's services/ethos."
 	
+		},
+		{
+			name: "Stock Watchlist",
+			img: stockChart,
+			link: "https://jabulanistockwatch.web.app/",
+			github: "https://github.com/JabulaniSifundza/stockapp",
+			description: "A single page React application that allows users to search, find and track company stock prices. Users can access historical data for their selected time period, visualize trajectory using stock charts and add company stocks to their wtachlist to access later."
+
 		},
 		{
 			name: "Text Toxicty Detector",
