@@ -4,7 +4,7 @@ import React from 'react';
 const AboutMe = ()=>{
 	return (
 		<div className="infoCard">
-			<h2>
+			<h2 className="aboutTitle" Style={"text-align: center"}>
 				About Me
 			</h2>
 

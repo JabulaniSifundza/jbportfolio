@@ -5,7 +5,7 @@ import {useState, useEffect} from 'react';
 const Introduction = () =>{
 	const [loopNum, setLoopNum] = useState(0);
 	const [isDeleting, setIsDeleting] = useState(false);
-	const toRotate = [ "Full-Stack Developer.", "Software Developer.", "Creator."];
+	const toRotate = [ "Front-End Developer.", "Full-Stack Developer.", "Software Developer.", "Creator."];
 	const [text, setText] = useState('');
 	const [delta, setDelta] = useState(300 - Math.random() * 100)
 	const period = 1600;
@@ -38,38 +38,16 @@ const Introduction = () =>{
 		}, delta)
 
 		return () =>{clearInterval(ticker)};
-	}, [delta, text])
+	},[delta, text])
 
 
 	return (
-		<div className="container">
-			<div className="screen monitor">
-				<div className="content">
-					<div className="intro">
-						<section className="info">
-							<h3 className="myName">Hi there, my name is Jabulani.</h3>
-							<br />
-							<h2 className="occupation">{`I'm a `}<span className="typing">{text}</span></h2>
-						</section>
-					</div>
-				</div>
-			<div className="base">
-			<div className="grey-shadow"></div>
-			<div className="foot top"></div>
-				<div className="foot bottom"></div>
-					<div className="shadow"></div>
-						<div className="keyboard">
-							<div className="btm"></div>
-							<ul className="keys">
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-							</ul>
-						<div className="shadow"></div>
-					</div>
-				</div>
-			</div>
+		<div className="intro">
+			<section className="info">
+				<h3 className="myName">Hi there, my name is Jabulani.</h3>
+				<br />
+				<h2 className="occupation">{`I'm a `}<span className="typing">{text}</span></h2>
+			</section>
 		</div>
 		
 	)
