@@ -30,7 +30,7 @@ const MySkills = ()=>{
 		{
 			skillName: "Python",
 			skillIcon: pythonLogo,
-			experience: "2 years"
+			experience: "3 years"
 
 		},
 		{

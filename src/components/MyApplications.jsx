@@ -8,11 +8,20 @@ import bot from '../images/robot.png';
 import toxic from '../images/toxicityIcon.png';
 
 //https://jabulanisifundza-nba-app-0m1ydr.streamlit.app
+//https://mybinder.org/v2/gh/JabulaniSifundza/equityResearchNotebook/HEAD
 
-
+// https://jabulanisifundza-multi-equity-equity-appequity-super-app-x4mjk7.streamlit.app/
 
 export const MyApplications = ()=>{
 	const applications = [
+		{
+			name: "Equity Research Helper",
+			img: coin,
+			link: "https://jabulanisifundza-multi-equity-equity-appequity-super-app-x4mjk7.streamlit.app/",
+			github: "https://github.com/JabulaniSifundza/multi_equity_app",
+			description: "This is a streamlit application that scrapes the web for the latest news articles on the searched public company. It then uses The BERT Hugging Face Financial Summarization Machine Learning model to summarize the articles into one sentence. The model is also used for sentiment analysis to tell whether the news articles was neutral, negative or positive with a score on how certain the model is of its prediction. This application also allows users to perform portfolio optimization using the Markowitz' efficient frontier theory and Monte Carlo simualtions. Users can search for a set of company tickers to make up their portfolio, then the application runs 125,000 random walks with various random weights to return the portfolio that minimizes the risk while maximizing the returns using the given portfolio of companies."
+		},
+
 		{
 			name: "Stock Price and S&P 500 Visualization",
 			img: coin,
