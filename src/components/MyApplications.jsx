@@ -21,7 +21,13 @@ export const MyApplications = ()=>{
 			github: "https://github.com/JabulaniSifundza/multi_equity_app",
 			description: "This is a streamlit application that scrapes the web for the latest news articles on the searched public company. It then uses The BERT Hugging Face Financial Summarization Machine Learning model to summarize the articles into one sentence. The model is also used for sentiment analysis to tell whether the news articles was neutral, negative or positive with a score on how certain the model is of its prediction. This application also allows users to perform portfolio optimization using the Markowitz' efficient frontier theory and Monte Carlo simualtions. Users can search for a set of company tickers to make up their portfolio, then the application runs 125,000 random walks with various random weights to return the portfolio that minimizes the risk while maximizing the returns using the given portfolio of companies."
 		},
-
+		{
+			name: "Node.js Financial Calculation and Company Profile Application",
+			img: coin,
+			link: "https://basic-finance.vercel.app/",
+			github: "https://github.com/JabulaniSifundza/basicFinance",
+			description: "A node.js application for basic, quick financial calculations and document creation. This Full stack application allows users to do financial calculations such as loan amortization, return on investment, compound interest and CAGR. The application also allows users to retrieve a public company's financial profile along with analyst recommendation on whether the stock is a buy or sell. Finally the application allows users to create and download PDF documents of their Income statement and personal monthly budget."
+		},
 		{
 			name: "Stock Price and S&P 500 Visualization",
 			img: coin,
