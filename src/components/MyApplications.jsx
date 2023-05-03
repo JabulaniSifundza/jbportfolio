@@ -11,6 +11,7 @@ import toxic from '../images/toxicityIcon.png';
 //https://mybinder.org/v2/gh/JabulaniSifundza/equityResearchNotebook/HEAD
 
 // https://jabulanisifundza-multi-equity-equity-appequity-super-app-x4mjk7.streamlit.app/
+//c
 
 export const MyApplications = ()=>{
 	const applications = [
@@ -27,6 +28,13 @@ export const MyApplications = ()=>{
 			link: "https://basic-finance.vercel.app/",
 			github: "https://github.com/JabulaniSifundza/basicFinance",
 			description: "A node.js application for basic, quick financial calculations and document creation. This Full stack application allows users to do financial calculations such as loan amortization, return on investment, compound interest and CAGR. The application also allows users to retrieve a public company's financial profile along with analyst recommendation on whether the stock is a buy or sell. Finally the application allows users to create and download PDF documents of their Income statement and personal monthly budget."
+		},
+		{
+			name: "Machine Learning Robo-Advisor",
+			img: bot,
+			link: "https://jabulanisifundza-robo-advisor-app-ystwgm.streamlit.app/",
+			github: "https://github.com/JabulaniSifundza/Robo-advisor",
+			description: "This application uses a Random Forest Machine Learning model to predict a user's risk tolerance according to a profile created/adjusted by the user. The application then uses the predicted risk tolerance coefficient to run simualtions on 120,000 potential portfolios to find the best one for the given profile's risk appetite. The user starts by entering various securities to compose the portfolio and then predict the user's risk profile to find the optimal weighting of the given securities for the portfolio."
 		},
 		{
 			name: "Stock Price and S&P 500 Visualization",
