@@ -13,8 +13,8 @@ const Header = () =>{
 			<div className="navigate">
 				<button className="navBtn" onClick={()=> window.scrollBy(0, 790, {behavior: 'smooth'})}>About</button>
 				<button className="navBtn" onClick={()=> window.scrollBy(0, 3420, {behavior: 'smooth'})}>Projects</button>
-				<button className="navBtn" onClick={()=> window.scrollBy(0, 4280, {behavior: 'smooth'})}>Resume</button>
-				<button className="navBtn" onClick={()=> window.scrollBy(0, 4280, {behavior: 'smooth'})}>Contact</button>
+				<button className="navBtn" onClick={()=> window.scrollBy(0, 4820, {behavior: 'smooth'})}>Resume</button>
+				<button className="navBtn" onClick={()=> window.scrollBy(0, 4820, {behavior: 'smooth'})}>Contact</button>
 			</div>
 
 			<div className="mobiNav">
