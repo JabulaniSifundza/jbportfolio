@@ -31,7 +31,7 @@ export const MyApplications = ()=>{
 		},
 		{
 			name: "Ndali South Africa Landing Page",
-			img: stockChart,
+			img: gesture,
 			link: "https://ndalibiz.web.app/",
 			github: "https://ndalibiz.web.app/",
 			description: "A landing page for a South African company that builds web applications for various use cases."
