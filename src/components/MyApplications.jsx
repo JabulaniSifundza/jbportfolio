@@ -5,7 +5,7 @@ import gameIcon from '../images/gameIcon.png';
 import gesture from '../images/handGesture.png';
 import stockChart from '../images/stockChart.png';
 import bot from '../images/robot.png';
-import toxic from '../images/toxicityIcon.png';
+
 
 //https://jabulanisifundza-nba-app-0m1ydr.streamlit.app
 //https://mybinder.org/v2/gh/JabulaniSifundza/equityResearchNotebook/HEAD
@@ -30,9 +30,23 @@ export const MyApplications = ()=>{
 			description: "A node.js application for basic, quick financial calculations and document creation. This Full stack application allows users to do financial calculations such as loan amortization, return on investment, compound interest and CAGR. The application also allows users to retrieve a public company's financial profile along with analyst recommendation on whether the stock is a buy or sell. Finally the application allows users to create and download PDF documents of their Income statement and personal monthly budget."
 		},
 		{
+			name: "Ndali South Africa Landing Page",
+			img: stockChart,
+			link: "https://ndalibiz.web.app/",
+			github: "https://ndalibiz.web.app/",
+			description: "A landing page for a South African company that builds web applications for various use cases."
+		},
+		{
+			name: "Private Chef Booking Platform",
+			img: coin,
+			link: "https://setthetable.app/",
+			github: "https://setthetable.app/",
+			description: "Set The Table is a platform created to bring you the best in culinary experiences by connecting you to qualified Chefs in your area. Whether it's catering for events, an intimate dinner for your loved ones or simple daily meal preps, let a Chef cater to your culinary desires as you cater to those closest to you."
+		},
+		{
 			name: "Machine Learning Robo-Advisor",
 			img: bot,
-			link: "https://jabulanisifundza-robo-advisor-app-ystwgm.streamlit.app/",
+			link: "https://github.com/JabulaniSifundza/Robo-advisor/blob/main/Robo_advisor_Notebook.ipynb",
 			github: "https://github.com/JabulaniSifundza/Robo-advisor",
 			description: "This application uses a Random Forest Machine Learning model to predict a user's risk tolerance according to a profile created/adjusted by the user. The application then uses the predicted risk tolerance coefficient to run simulations on 120,000 potential portfolios to find the best one for the given profile's risk appetite. The user starts by entering various securities to compose the portfolio and then predict the user's risk profile to find the optimal weighting of the given securities for the portfolio."
 		},
@@ -75,36 +89,12 @@ export const MyApplications = ()=>{
 
 		},
 		{
-			name: "Image Classifier",
-			img: bot,
-			link: "https://jabulaniimagerecognition.web.app/",
-			github: "https://github.com/JabulaniSifundza/classifier",
-			description: "A React application that allows users to upload or provide links to images they would like classified. The application then uses a TensorFlow Machine Learning Model to analyze and predict/classify the objects that exist within the image."
-	
-		},
-		{
-			name: "Passage Question and Answer",
-			img: bot,
-			link: "https://jabulaniqna.web.app",
-			github: "https://github.com/JabulaniSifundza/passagereader",
-			description: "A single page application that allows the user to pass a passage as an input and then ask a Natural Language Processing Machine Learning Model questions on that passage, which the model provides answers to. This applicaton uses TensorFlow's BERT Q and A model to read the passage and answer the user's questions. This could be useful for users who want to extract information for long passages or in applications as customer support to answer questions about a company's services/ethos."
-	
-		},
-		{
 			name: "Stock Watchlist",
 			img: stockChart,
 			link: "https://jabulanistockwatch.web.app/",
 			github: "https://github.com/JabulaniSifundza/stockapp",
 			description: "A single page React application that allows users to search, find and track company stock prices. Users can access historical data for their selected time period, visualize trajectory using stock charts and add company stocks to their wtachlist to access later."
 
-		},
-		{
-			name: "Text Toxicty Detector",
-			img: toxic,
-			link: "https://jabulanitoxicity.web.app/",
-			github: "https://github.com/JabulaniSifundza/detectToxic",
-			description: "A simple single page application that takes user input and detects whether that input/message contains any toxicity/profanity in it. This application uses TensorFlow's Toxicity Detection Machine Learning Model to determine whether inputs are toxic or not."
-	
 		}
 	]
 
