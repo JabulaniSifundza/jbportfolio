@@ -16,6 +16,13 @@ import bot from '../images/robot.png';
 export const MyApplications = ()=>{
 	const applications = [
 		{
+			name: "Equity Return Calculation and Simulation App",
+			img: stockChart,
+			link: "https://financial-app-five.vercel.app/",
+			github: "https://github.com/JabulaniSifundza/financial-calculation-app",
+			description: "This web application combines the power of client-side Javascript and Python (using PyScript) to allow users to perform various financial investment tasks. The application allows users to create a portfolio of stocks using the Node.js Yahoo Finance API. Once stock tickers are added, users can calculate the CAPM (Capital Asset Pricing Model) using Python for each stock to measure the expected return of each stock. Users can visualize company data using various profitability metrics and download all the selected company's financial data including stock prices going all the way back to 2005. The application allows users to create a Logistic Regression model that predicts or recommends whether the user should buy the stock or not using Open, High, Low, Volume, and Adjusted Closing price from the previous day. Using Monte Carlo Simulations, Markowitz's Efficient Frontier Theory, and Mathematical Optimization, users can optimize their current portfolio to maximize the Sharpe Ratio or find the portfolio composition with the lowest volatility given the companies added to that portfolio."
+		},
+		{
 			name: "Equity Research Helper",
 			img: coin,
 			link: "https://jabulanisifundza-multi-equity-equity-appequity-super-app-x4mjk7.streamlit.app/",
