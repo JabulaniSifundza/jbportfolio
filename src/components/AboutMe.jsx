@@ -9,13 +9,12 @@ const AboutMe = ()=>{
 			</h2>
 
 			<p className="personalInfo">
-				I graduated from Lake Forest College (Illinois, USA) in 2019 with a BA in Finance. Shortly after graduating, 
-				I embarked on a journey to help solve various technological problems for small businesses in eSwatini and South Africa. The more I learned about the various
-				problems, technologies and potential solutions, the more I became enamored with software engineering. My journey then led me to becoming 
-				a Full Stack developer because I was inclined to pursue a career that would allow me to
-				use my creativity to bridge my imagination with reality and solve complex problems with software.
-				I am passionate about learning new technologies, creating and designing high quality solutions/experiences. 
-				I enjoy reading comic books, experimenting with my cooking as well as watching and critiquing movies.
+				I'm Jabulani JB Sifundza, a driven MS Finance student at Illinois Institute of Technology, specializing in Quantitative Finance and Technology. 
+				With a foundation in finance from Lake Forest College, I've blended my passion for problem-solving with technical expertise. 
+				My experience as Co-Founder and Software Developer at NDALI in South Africa allowed me to leverage Python, machine learning, and financial analysis to drive tangible results, including significant revenue growth and improved customer segmentation. 
+				I'm skilled in data analysis, financial modeling, and developing data-driven solutions. 
+				Currently, I'm honing my quantitative finance skills through rigorous coursework and projects, such as the Chicago Quantitative Alliance Investment Challenge, where I developed advanced trading strategies and automated compliance checks. 
+				I'm passionate about creating innovative solutions that bridge finance and technology, and I enjoy exploring new technologies, cooking, and cinema in my free time.
 			</p>
 		</div>
 
