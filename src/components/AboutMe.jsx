@@ -7,7 +7,6 @@ const AboutMe = ()=>{
 			<h2 className="aboutTitle" Style={"text-align: center"}>
 				About Me
 			</h2>
-
 			<p className="personalInfo">
 				I'm Jabulani JB Sifundza, a driven MS Finance student at Illinois Institute of Technology, specializing in Quantitative Finance and Technology. 
 				With a foundation in finance from Lake Forest College, I've blended my passion for problem-solving with technical expertise. 
