@@ -10,7 +10,7 @@ const GetInTouch = ()=>{
 				const fileURL = window.URL.createObjectURL(blob);
 				let alink = document.createElement('a');
 				alink.href = fileURL;
-				alink.download = 'JabulaniSifundza.pdf';
+				alink.download = 'JabulaniSifundzaPortfolioResume.pdf';
 				alink.click();
 			})
 		})
