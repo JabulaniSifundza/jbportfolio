@@ -1,7 +1,7 @@
 import React from 'react';
 import linkedIn from '../images/linkedIn.png';
 import gitHub from '../images/gitHub.png';
-import TheOu from '../images/TheOuUpdated.png';
+import TheOu from '../images/TheNewOu.png';
 
 const LanyardDetails = () =>{
 

@@ -5,7 +5,7 @@ import {useState, useEffect} from 'react';
 const Introduction = () =>{
 	const [loopNum, setLoopNum] = useState(0);
 	const [isDeleting, setIsDeleting] = useState(false);
-	const toRotate = [ "Front-End Developer.", "Full-Stack Developer.", "Software Developer.", "Creator."];
+	const toRotate = ["Creator.", "Financial Technologist.", "Quantitative Analyst.", "FinTech Enthusiast."];
 	const [text, setText] = useState('');
 	const [delta, setDelta] = useState(300 - Math.random() * 100)
 	const period = 1600;
